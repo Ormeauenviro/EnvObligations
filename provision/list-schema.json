@@ -1,0 +1,351 @@
+{
+  "$comment": "Single source of truth for the SharePoint lists. Read by Provision-Lists.ps1, provision/build_schema_docs.py (docs/list-schema.md and docs/manual-provisioning.md) and the Phase 3 loader. Field types: Text, Note, Choice, DateOnly, DateTime, Number, Boolean, User, UserMulti, URL, Lookup. Choices starting with @ refer to choiceSets.",
+  "version": "1.0",
+  "choiceSets": {
+    "SourceRegister": [
+      "CEMP and General Requirements",
+      "PFAS CMP Requirements",
+      "ADR WWBW Conditions",
+      "Bridge Creek DA Conditions",
+      "No Name DA Conditions",
+      "Marine Plants DA Conditions",
+      "No Name Operational Works",
+      "External CHMP Conditions",
+      "RPP Exemption",
+      "Specification Requirements",
+      "Legislation"
+    ],
+    "ProjectStage": [
+      "All stages",
+      "Design",
+      "Pre-construction",
+      "Pre-construction and construction",
+      "Construction",
+      "Construction and operation",
+      "Operation",
+      "Completion",
+      "Post-construction",
+      "Rehabilitation and monitoring"
+    ],
+    "Frequency": [
+      "Once",
+      "Daily",
+      "Weekly",
+      "Monthly",
+      "Quarterly",
+      "Six-monthly",
+      "Annual",
+      "Milestone",
+      "Trigger-based",
+      "Ongoing"
+    ],
+    "Status": ["Not started", "Underway", "Complete", "Missing", "N/A – Info only"],
+    "OccurrenceStatus": ["Not started", "Underway", "Complete", "Missing"],
+    "ComplianceOutcome": ["Not assessed", "Compliant", "Non-compliant"],
+    "RiskRating": ["A", "B", "C", "D"],
+    "ResponsibleRole": [
+      "Environmental and Sustainability Team",
+      "Environmental Manager",
+      "Environmental Advisor",
+      "Project Manager",
+      "Construction Manager",
+      "Site Manager",
+      "Site Supervisor",
+      "Engineering and Design Team",
+      "Contractor",
+      "Asset Owner / Operator"
+    ],
+    "DueAnchor": [
+      "Construction start",
+      "Practical completion",
+      "Rehabilitation completion",
+      "Revegetation commencement",
+      "Temporary barrier removal",
+      "Restoration works completion"
+    ],
+    "FollowUpStatus": ["Open", "Resolved"],
+    "FollowUpReasonType": ["Missing", "Overdue", "Evidence gap", "Import review", "Other"],
+    "ItemType": ["Obligation", "Occurrence", "Task", "Follow-up"],
+    "ChangeSource": ["App", "Flow", "Import"],
+    "DocCategory": [
+      "Specification",
+      "Heritage",
+      "WWBW",
+      "RPP Exemption",
+      "CMP",
+      "Development approval",
+      "Management plan",
+      "Contract",
+      "Standard",
+      "Legislation"
+    ],
+    "ReportName": [
+      "Monitoring data made available to TMR",
+      "PFAS Monthly Compliance Report",
+      "CMP Monthly Audit Report",
+      "Compliance Register",
+      "CMP Close Out Report"
+    ],
+    "ReportFrequency": ["Monthly", "Post construction"]
+  },
+  "lists": [
+    {
+      "key": "SourceDocuments",
+      "title": "Source Documents",
+      "url": "Lists/SourceDocuments",
+      "description": "Source document register (from TP002 _Doc Ref plus permits and plans cited in the register).",
+      "attachments": false,
+      "titleField": { "displayName": "Document Title", "indexed": false, "unique": false },
+      "fields": [
+        { "name": "DocKey", "displayName": "Document Key", "type": "Text", "required": true, "indexed": true, "unique": true, "description": "Stable key used for upserts, e.g. SDA-2402-39300, MD-13-320." },
+        { "name": "Category", "displayName": "Category", "type": "Choice", "choices": "@DocCategory", "indexed": true },
+        { "name": "Reference", "displayName": "# / Reference", "type": "Text" },
+        { "name": "Version", "displayName": "Version", "type": "Text" },
+        { "name": "DocDate", "displayName": "Document Date", "type": "DateOnly" },
+        { "name": "DocLink", "displayName": "Document Link", "type": "URL" },
+        { "name": "FolderLink", "displayName": "Folder Link", "type": "URL" },
+        { "name": "Provided", "displayName": "Provided", "type": "Boolean", "default": true, "indexed": true, "description": "No = listed in red on _Doc Ref (not yet provided)." },
+        { "name": "Comments", "displayName": "Comments", "type": "Note" }
+      ],
+      "views": [
+        { "title": "All Items", "default": true, "rowLimit": 100, "fields": ["DocKey", "LinkTitle", "Category", "Reference", "Version", "DocDate", "Provided", "DocLink"], "query": "<OrderBy><FieldRef Name='Category'/><FieldRef Name='DocKey'/></OrderBy>" },
+        { "title": "Not Provided", "rowLimit": 100, "fields": ["DocKey", "LinkTitle", "Category", "Reference", "Comments"], "query": "<Where><Eq><FieldRef Name='Provided'/><Value Type='Boolean'>0</Value></Eq></Where>" }
+      ]
+    },
+    {
+      "key": "ProjectMilestones",
+      "title": "Project Milestones",
+      "url": "Lists/ProjectMilestones",
+      "description": "Key project dates that anchor due-date rules (D-10).",
+      "attachments": false,
+      "titleField": { "displayName": "Milestone", "indexed": true, "unique": true },
+      "fields": [
+        { "name": "PlannedDate", "displayName": "Planned Date", "type": "DateOnly" },
+        { "name": "ActualDate", "displayName": "Actual Date", "type": "DateOnly" },
+        { "name": "Notes", "displayName": "Notes", "type": "Note" }
+      ],
+      "views": [
+        { "title": "All Items", "default": true, "rowLimit": 50, "fields": ["LinkTitle", "PlannedDate", "ActualDate", "Notes"], "query": "<OrderBy><FieldRef Name='PlannedDate'/></OrderBy>" }
+      ]
+    },
+    {
+      "key": "RoleAssignments",
+      "title": "Role Assignments",
+      "url": "Lists/RoleAssignments",
+      "description": "Maps each Responsible Role to real people. Obligation Owner is resolved from Primary Person.",
+      "attachments": false,
+      "titleField": { "displayName": "Responsible Role", "indexed": true, "unique": true },
+      "fields": [
+        { "name": "PrimaryPerson", "displayName": "Primary Person", "type": "User", "indexed": true, "description": "Becomes the Owner of obligations with this role." },
+        { "name": "AdditionalPeople", "displayName": "Additional People", "type": "UserMulti", "description": "Copied on notifications. Not used for filtering." },
+        { "name": "Notes", "displayName": "Notes", "type": "Note" }
+      ],
+      "views": [
+        { "title": "All Items", "default": true, "rowLimit": 50, "fields": ["LinkTitle", "PrimaryPerson", "AdditionalPeople", "Notes"], "query": "<OrderBy><FieldRef Name='Title'/></OrderBy>" }
+      ]
+    },
+    {
+      "key": "Obligations",
+      "title": "Obligations",
+      "url": "Lists/Obligations",
+      "description": "Environmental compliance obligations (replaces the TP002.1 register sheets).",
+      "attachments": false,
+      "titleField": { "displayName": "Obligation ID", "indexed": true, "unique": true },
+      "fields": [
+        { "name": "SourceRegister", "displayName": "Source Register", "type": "Choice", "choices": "@SourceRegister", "required": true, "indexed": true },
+        { "name": "SourceOrder", "displayName": "Source Order", "type": "Number", "description": "Row order within the source register; used for sorting and the TP002 export." },
+        { "name": "SourceCell", "displayName": "Source Cell", "type": "Text", "description": "Original workbook location, e.g. 'Bridge Creek DA Conditions'!A14:N14." },
+        { "name": "SectionGroup", "displayName": "Section/Group", "type": "Text" },
+        { "name": "ConditionNo", "displayName": "Condition #", "type": "Text" },
+        { "name": "ParentObligationID", "displayName": "Parent Obligation ID", "type": "Text", "description": "Set on sub-conditions, e.g. MP-NAC-006B has parent MP-NAC-006." },
+        { "name": "LocationActivity", "displayName": "Project Location/Activity", "type": "Text" },
+        { "name": "ProjectStage", "displayName": "Project Stage", "type": "Choice", "choices": "@ProjectStage", "indexed": true },
+        { "name": "RequirementSummary", "displayName": "Requirement Summary", "type": "Text", "required": true, "indexed": true, "description": "First 250 characters of the requirement; used for delegable StartsWith search." },
+        { "name": "Requirement", "displayName": "Requirement", "type": "Note", "required": true },
+        { "name": "SourceReference", "displayName": "Source Reference", "type": "Note" },
+        { "name": "SourceDocument", "displayName": "Source Document", "type": "Lookup", "lookupList": "SourceDocuments" },
+        { "name": "ComplianceAction", "displayName": "Compliance Action/Controls", "type": "Note" },
+        { "name": "PracticalImplementation", "displayName": "Practical Implementation", "type": "Note" },
+        { "name": "EvidenceRequired", "displayName": "Evidence Required", "type": "Note", "description": "What evidence demonstrates compliance (D-02)." },
+        { "name": "Stakeholder", "displayName": "Stakeholder Review/Approval/Submission", "type": "Note" },
+        { "name": "RiskRating", "displayName": "Risk Rating", "type": "Choice", "choices": "@RiskRating", "description": "Per DTI-RM-ST001. Blank = not rated." },
+        { "name": "RiskSort", "displayName": "Risk Sort", "type": "Number", "indexed": true, "description": "A=1, B=2, C=3, D=4, not rated=5. Maintained by the app and loader for delegable sorting." },
+        { "name": "Frequency", "displayName": "Frequency", "type": "Choice", "choices": "@Frequency", "required": true, "indexed": true },
+        { "name": "TimingDetail", "displayName": "Timing Detail", "type": "Note" },
+        { "name": "RecurrenceStart", "displayName": "Recurrence Start", "type": "DateOnly", "description": "First period the occurrence generator creates (recurring obligations)." },
+        { "name": "RecurrenceEnd", "displayName": "Recurrence End", "type": "DateOnly", "description": "Last period to generate; blank = until Active is set to No." },
+        { "name": "DueAnchor", "displayName": "Due Anchor", "type": "Choice", "choices": "@DueAnchor", "description": "Project milestone a once-off due date is calculated from." },
+        { "name": "DueOffsetDays", "displayName": "Due Offset (days)", "type": "Number", "description": "Once/Milestone: days after the Due Anchor. Recurring: days after period end that each occurrence is due." },
+        { "name": "DueDate", "displayName": "Due Date", "type": "DateOnly", "indexed": true, "description": "Real due date. For recurring obligations, the current occurrence's Period Due." },
+        { "name": "DueRule", "displayName": "Due Rule", "type": "Text", "description": "Original due-date text from TP002." },
+        { "name": "Owner", "displayName": "Owner", "type": "User", "indexed": true },
+        { "name": "ResponsibleRole", "displayName": "Responsible Role", "type": "Choice", "choices": "@ResponsibleRole", "indexed": true },
+        { "name": "SupportingRoles", "displayName": "Supporting Roles", "type": "Note" },
+        { "name": "Status", "displayName": "Status", "type": "Choice", "choices": "@Status", "required": true, "default": "Not started", "indexed": true },
+        { "name": "StatusComment", "displayName": "Status Reason/Justification", "type": "Note", "description": "Reason for Missing, or justification for Complete without an evidence link." },
+        { "name": "ComplianceOutcome", "displayName": "Compliance Outcome", "type": "Choice", "choices": "@ComplianceOutcome", "required": true, "default": "Not assessed", "indexed": true },
+        { "name": "ComplianceNotes", "displayName": "Compliance Notes", "type": "Note" },
+        { "name": "LastReviewed", "displayName": "Last Reviewed", "type": "DateOnly" },
+        { "name": "InfoOnly", "displayName": "Info Only", "type": "Boolean", "default": false, "indexed": true },
+        { "name": "Active", "displayName": "Active", "type": "Boolean", "default": true, "indexed": true, "description": "No = closed out; the occurrence generator and overdue check skip it." },
+        { "name": "HasOpenFollowUp", "displayName": "Has Open Follow-up", "type": "Boolean", "default": false, "indexed": true, "description": "Maintained by flows." },
+        { "name": "IsOverdue", "displayName": "Is Overdue", "type": "Boolean", "default": false, "indexed": true, "description": "Maintained by the daily overdue flow. Overdue is derived, never a status." },
+        { "name": "CurrentOccurrenceKey", "displayName": "Current Occurrence Key", "type": "Text", "description": "Occurrence the status rolls up from (recurring obligations)." },
+        { "name": "ExtraFields", "displayName": "Extra Fields", "type": "Note", "description": "Labelled text for workbook content with no dedicated column." }
+      ],
+      "views": [
+        { "title": "All Items", "default": true, "rowLimit": 100, "fields": ["LinkTitle", "SourceRegister", "ConditionNo", "RequirementSummary", "ProjectStage", "Frequency", "DueDate", "Owner", "ResponsibleRole", "Status", "ComplianceOutcome", "RiskRating", "HasOpenFollowUp", "IsOverdue"], "query": "<OrderBy><FieldRef Name='SourceRegister'/><FieldRef Name='SourceOrder'/></OrderBy>" },
+        { "title": "Open", "rowLimit": 100, "fields": ["LinkTitle", "SourceRegister", "RequirementSummary", "Frequency", "DueDate", "Owner", "Status", "RiskRating", "IsOverdue"], "query": "<Where><Or><Or><Eq><FieldRef Name='Status'/><Value Type='Choice'>Not started</Value></Eq><Eq><FieldRef Name='Status'/><Value Type='Choice'>Underway</Value></Eq></Or><Eq><FieldRef Name='Status'/><Value Type='Choice'>Missing</Value></Eq></Or></Where><OrderBy><FieldRef Name='DueDate'/></OrderBy>" },
+        { "title": "Overdue", "rowLimit": 100, "fields": ["LinkTitle", "SourceRegister", "RequirementSummary", "DueDate", "Owner", "Status", "RiskRating"], "query": "<Where><Eq><FieldRef Name='IsOverdue'/><Value Type='Boolean'>1</Value></Eq></Where><OrderBy><FieldRef Name='DueDate'/></OrderBy>" },
+        { "title": "Missing or Follow-up", "rowLimit": 100, "fields": ["LinkTitle", "SourceRegister", "RequirementSummary", "Owner", "Status", "StatusComment", "HasOpenFollowUp"], "query": "<Where><Or><Eq><FieldRef Name='HasOpenFollowUp'/><Value Type='Boolean'>1</Value></Eq><Eq><FieldRef Name='Status'/><Value Type='Choice'>Missing</Value></Eq></Or></Where><OrderBy><FieldRef Name='RiskSort'/></OrderBy>" },
+        { "title": "By Register", "rowLimit": 100, "fields": ["LinkTitle", "SectionGroup", "ConditionNo", "RequirementSummary", "Frequency", "Owner", "Status", "ComplianceOutcome"], "query": "<GroupBy Collapse='TRUE' GroupLimit='30'><FieldRef Name='SourceRegister'/></GroupBy><OrderBy><FieldRef Name='SourceOrder'/></OrderBy>" },
+        { "title": "My Obligations", "rowLimit": 100, "fields": ["LinkTitle", "SourceRegister", "RequirementSummary", "Frequency", "DueDate", "Status", "IsOverdue"], "query": "<Where><Eq><FieldRef Name='Owner'/><Value Type='Integer'><UserID Type='Integer'/></Value></Eq></Where><OrderBy><FieldRef Name='DueDate'/></OrderBy>" },
+        { "title": "Info Only", "rowLimit": 100, "fields": ["LinkTitle", "SourceRegister", "RequirementSummary", "SourceReference"], "query": "<Where><Eq><FieldRef Name='InfoOnly'/><Value Type='Boolean'>1</Value></Eq></Where><OrderBy><FieldRef Name='SourceOrder'/></OrderBy>" }
+      ]
+    },
+    {
+      "key": "Occurrences",
+      "title": "Occurrences",
+      "url": "Lists/Occurrences",
+      "description": "One item per period for recurring and milestone obligations. Expected to exceed 2,000 items.",
+      "attachments": false,
+      "titleField": { "displayName": "Occurrence Key", "indexed": true, "unique": true },
+      "fields": [
+        { "name": "Obligation", "displayName": "Obligation", "type": "Lookup", "lookupList": "Obligations", "required": true },
+        { "name": "ObligationID", "displayName": "Obligation ID", "type": "Text", "required": true, "indexed": true, "description": "Copy of the obligation's ID for delegable filtering." },
+        { "name": "ObligationSummary", "displayName": "Obligation Summary", "type": "Text", "description": "Copy of Requirement Summary so galleries avoid per-row lookups." },
+        { "name": "PeriodLabel", "displayName": "Period Label", "type": "Text", "required": true },
+        { "name": "PeriodStart", "displayName": "Period Start", "type": "DateOnly", "required": true, "indexed": true },
+        { "name": "PeriodEnd", "displayName": "Period End", "type": "DateOnly" },
+        { "name": "PeriodDue", "displayName": "Period Due", "type": "DateOnly", "required": true, "indexed": true },
+        { "name": "Assignee", "displayName": "Assignee", "type": "User", "indexed": true },
+        { "name": "Status", "displayName": "Status", "type": "Choice", "choices": "@OccurrenceStatus", "required": true, "default": "Not started", "indexed": true },
+        { "name": "StatusComment", "displayName": "Status Reason/Justification", "type": "Note" },
+        { "name": "ComplianceOutcome", "displayName": "Compliance Outcome", "type": "Choice", "choices": "@ComplianceOutcome", "required": true, "default": "Not assessed" },
+        { "name": "CompletedDate", "displayName": "Completed Date", "type": "DateOnly" },
+        { "name": "EvidenceURL", "displayName": "Evidence URL", "type": "URL" },
+        { "name": "Notes", "displayName": "Notes", "type": "Note" },
+        { "name": "RiskSort", "displayName": "Risk Sort", "type": "Number", "indexed": true },
+        { "name": "IsOverdue", "displayName": "Is Overdue", "type": "Boolean", "default": false, "indexed": true },
+        { "name": "HasOpenFollowUp", "displayName": "Has Open Follow-up", "type": "Boolean", "default": false }
+      ],
+      "views": [
+        { "title": "All Items", "default": true, "rowLimit": 100, "fields": ["LinkTitle", "ObligationID", "PeriodLabel", "PeriodDue", "Assignee", "Status", "CompletedDate", "EvidenceURL", "IsOverdue"], "query": "<OrderBy><FieldRef Name='PeriodDue' Ascending='FALSE'/></OrderBy>" },
+        { "title": "Open", "rowLimit": 100, "fields": ["LinkTitle", "ObligationID", "ObligationSummary", "PeriodLabel", "PeriodDue", "Assignee", "Status", "IsOverdue"], "query": "<Where><Or><Or><Eq><FieldRef Name='Status'/><Value Type='Choice'>Not started</Value></Eq><Eq><FieldRef Name='Status'/><Value Type='Choice'>Underway</Value></Eq></Or><Eq><FieldRef Name='Status'/><Value Type='Choice'>Missing</Value></Eq></Or></Where><OrderBy><FieldRef Name='PeriodDue'/></OrderBy>" },
+        { "title": "Due Next 30 Days", "rowLimit": 100, "fields": ["LinkTitle", "ObligationID", "ObligationSummary", "PeriodLabel", "PeriodDue", "Assignee", "Status"], "query": "<Where><And><Geq><FieldRef Name='PeriodDue'/><Value Type='DateTime'><Today/></Value></Geq><Leq><FieldRef Name='PeriodDue'/><Value Type='DateTime'><Today OffsetDays='30'/></Value></Leq></And></Where><OrderBy><FieldRef Name='PeriodDue'/></OrderBy>" },
+        { "title": "Overdue", "rowLimit": 100, "fields": ["LinkTitle", "ObligationID", "ObligationSummary", "PeriodDue", "Assignee", "Status"], "query": "<Where><Eq><FieldRef Name='IsOverdue'/><Value Type='Boolean'>1</Value></Eq></Where><OrderBy><FieldRef Name='PeriodDue'/></OrderBy>" },
+        { "title": "My Occurrences", "rowLimit": 100, "fields": ["LinkTitle", "ObligationID", "ObligationSummary", "PeriodLabel", "PeriodDue", "Status"], "query": "<Where><Eq><FieldRef Name='Assignee'/><Value Type='Integer'><UserID Type='Integer'/></Value></Eq></Where><OrderBy><FieldRef Name='PeriodDue'/></OrderBy>" }
+      ]
+    },
+    {
+      "key": "Tasks",
+      "title": "Obligation Tasks",
+      "url": "Lists/ObligationTasks",
+      "description": "Checklist items that can be ticked off against an obligation.",
+      "attachments": false,
+      "titleField": { "displayName": "Task", "indexed": false, "unique": false },
+      "fields": [
+        { "name": "Obligation", "displayName": "Obligation", "type": "Lookup", "lookupList": "Obligations", "required": true },
+        { "name": "ObligationID", "displayName": "Obligation ID", "type": "Text", "required": true, "indexed": true },
+        { "name": "ObligationSummary", "displayName": "Obligation Summary", "type": "Text" },
+        { "name": "TaskOrder", "displayName": "Task Order", "type": "Number" },
+        { "name": "Assignee", "displayName": "Assignee", "type": "User", "indexed": true },
+        { "name": "DueDate", "displayName": "Due Date", "type": "DateOnly", "indexed": true },
+        { "name": "Done", "displayName": "Done", "type": "Boolean", "default": false, "indexed": true },
+        { "name": "DoneDate", "displayName": "Done Date", "type": "DateOnly" },
+        { "name": "Notes", "displayName": "Notes", "type": "Note" }
+      ],
+      "views": [
+        { "title": "All Items", "default": true, "rowLimit": 100, "fields": ["ObligationID", "TaskOrder", "LinkTitle", "Assignee", "DueDate", "Done", "DoneDate"], "query": "<OrderBy><FieldRef Name='ObligationID'/><FieldRef Name='TaskOrder'/></OrderBy>" },
+        { "title": "Open Tasks", "rowLimit": 100, "fields": ["ObligationID", "LinkTitle", "Assignee", "DueDate"], "query": "<Where><Eq><FieldRef Name='Done'/><Value Type='Boolean'>0</Value></Eq></Where><OrderBy><FieldRef Name='DueDate'/></OrderBy>" },
+        { "title": "My Tasks", "rowLimit": 100, "fields": ["ObligationID", "LinkTitle", "DueDate", "Done"], "query": "<Where><And><Eq><FieldRef Name='Assignee'/><Value Type='Integer'><UserID Type='Integer'/></Value></Eq><Eq><FieldRef Name='Done'/><Value Type='Boolean'>0</Value></Eq></And></Where><OrderBy><FieldRef Name='DueDate'/></OrderBy>" }
+      ]
+    },
+    {
+      "key": "Evidence",
+      "title": "Evidence",
+      "url": "Lists/Evidence",
+      "description": "Links to evidence held in SharePoint, against an obligation and optionally an occurrence.",
+      "attachments": true,
+      "titleField": { "displayName": "Title", "indexed": false, "unique": false },
+      "fields": [
+        { "name": "ObligationID", "displayName": "Obligation ID", "type": "Text", "required": true, "indexed": true },
+        { "name": "OccurrenceKey", "displayName": "Occurrence Key", "type": "Text", "indexed": true },
+        { "name": "EvidenceURL", "displayName": "SharePoint URL", "type": "URL", "required": true },
+        { "name": "EvidenceDate", "displayName": "Date", "type": "DateOnly", "indexed": true },
+        { "name": "AddedBy", "displayName": "Added By", "type": "User", "indexed": true },
+        { "name": "Notes", "displayName": "Notes", "type": "Note" }
+      ],
+      "views": [
+        { "title": "All Items", "default": true, "rowLimit": 100, "fields": ["ObligationID", "OccurrenceKey", "LinkTitle", "EvidenceURL", "EvidenceDate", "AddedBy"], "query": "<OrderBy><FieldRef Name='ID' Ascending='FALSE'/></OrderBy>" }
+      ]
+    },
+    {
+      "key": "FollowUps",
+      "title": "Follow-ups",
+      "url": "Lists/FollowUps",
+      "description": "Items needing follow-up: Missing obligations, overdue items, evidence gaps and import review.",
+      "attachments": false,
+      "titleField": { "displayName": "Follow-up", "indexed": false, "unique": false },
+      "fields": [
+        { "name": "ObligationID", "displayName": "Obligation ID", "type": "Text", "required": true, "indexed": true },
+        { "name": "OccurrenceKey", "displayName": "Occurrence Key", "type": "Text", "indexed": true },
+        { "name": "ObligationSummary", "displayName": "Obligation Summary", "type": "Text" },
+        { "name": "ReasonType", "displayName": "Reason Type", "type": "Choice", "choices": "@FollowUpReasonType", "required": true, "default": "Missing", "indexed": true },
+        { "name": "Reason", "displayName": "Reason", "type": "Note", "required": true },
+        { "name": "Owner", "displayName": "Owner", "type": "User", "indexed": true },
+        { "name": "FollowUpDate", "displayName": "Follow-up Date", "type": "DateOnly", "indexed": true },
+        { "name": "Status", "displayName": "Status", "type": "Choice", "choices": "@FollowUpStatus", "required": true, "default": "Open", "indexed": true },
+        { "name": "ResolutionComment", "displayName": "Resolution Comment", "type": "Note" },
+        { "name": "ResolvedBy", "displayName": "Resolved By", "type": "User" },
+        { "name": "ResolvedDate", "displayName": "Resolved Date", "type": "DateOnly" },
+        { "name": "RiskSort", "displayName": "Risk Sort", "type": "Number", "indexed": true }
+      ],
+      "views": [
+        { "title": "All Items", "default": true, "rowLimit": 100, "fields": ["LinkTitle", "ObligationID", "ReasonType", "Owner", "FollowUpDate", "Status", "Created"], "query": "<OrderBy><FieldRef Name='Created' Ascending='FALSE'/></OrderBy>" },
+        { "title": "Open", "rowLimit": 100, "fields": ["LinkTitle", "ObligationID", "ObligationSummary", "ReasonType", "Reason", "Owner", "FollowUpDate", "Created"], "query": "<Where><Eq><FieldRef Name='Status'/><Value Type='Choice'>Open</Value></Eq></Where><OrderBy><FieldRef Name='RiskSort'/><FieldRef Name='Created'/></OrderBy>" },
+        { "title": "My Open Follow-ups", "rowLimit": 100, "fields": ["LinkTitle", "ObligationID", "ReasonType", "Reason", "FollowUpDate"], "query": "<Where><And><Eq><FieldRef Name='Owner'/><Value Type='Integer'><UserID Type='Integer'/></Value></Eq><Eq><FieldRef Name='Status'/><Value Type='Choice'>Open</Value></Eq></And></Where><OrderBy><FieldRef Name='FollowUpDate'/></OrderBy>" }
+      ]
+    },
+    {
+      "key": "StatusHistory",
+      "title": "Status History",
+      "url": "Lists/StatusHistory",
+      "description": "Append-only log of every status change (app, flows and import).",
+      "attachments": false,
+      "titleField": { "displayName": "Item ID", "indexed": true, "unique": false },
+      "fields": [
+        { "name": "ItemType", "displayName": "Item Type", "type": "Choice", "choices": "@ItemType", "required": true, "indexed": true },
+        { "name": "ObligationID", "displayName": "Obligation ID", "type": "Text", "required": true, "indexed": true },
+        { "name": "OldStatus", "displayName": "Old Status", "type": "Text" },
+        { "name": "NewStatus", "displayName": "New Status", "type": "Text", "required": true },
+        { "name": "ChangedBy", "displayName": "Changed By", "type": "User" },
+        { "name": "ChangedAt", "displayName": "Changed At", "type": "DateTime", "required": true, "indexed": true },
+        { "name": "Comment", "displayName": "Comment", "type": "Note" },
+        { "name": "ChangeSource", "displayName": "Change Source", "type": "Choice", "choices": "@ChangeSource", "default": "App" }
+      ],
+      "views": [
+        { "title": "All Items", "default": true, "rowLimit": 100, "fields": ["ChangedAt", "LinkTitle", "ItemType", "ObligationID", "OldStatus", "NewStatus", "ChangedBy", "ChangeSource", "Comment"], "query": "<OrderBy><FieldRef Name='ChangedAt' Ascending='FALSE'/></OrderBy>" },
+        { "title": "Last 30 Days", "rowLimit": 100, "fields": ["ChangedAt", "LinkTitle", "ItemType", "OldStatus", "NewStatus", "ChangedBy", "Comment"], "query": "<Where><Geq><FieldRef Name='ChangedAt'/><Value Type='DateTime'><Today OffsetDays='-30'/></Value></Geq></Where><OrderBy><FieldRef Name='ChangedAt' Ascending='FALSE'/></OrderBy>" }
+      ]
+    },
+    {
+      "key": "ReportComponents",
+      "title": "Report Components",
+      "url": "Lists/ReportComponents",
+      "description": "Reporting Matrix: which content items go into which report.",
+      "attachments": false,
+      "titleField": { "displayName": "Content Item", "indexed": false, "unique": false },
+      "fields": [
+        { "name": "ReportName", "displayName": "Report Name", "type": "Choice", "choices": "@ReportName", "required": true, "indexed": true },
+        { "name": "ReportFrequency", "displayName": "Report Frequency", "type": "Choice", "choices": "@ReportFrequency" },
+        { "name": "ReportSourceRef", "displayName": "Report Source Reference", "type": "Text" },
+        { "name": "ProducingObligationID", "displayName": "Producing Obligation ID", "type": "Text", "indexed": true },
+        { "name": "SortOrder", "displayName": "Sort Order", "type": "Number" }
+      ],
+      "views": [
+        { "title": "All Items", "default": true, "rowLimit": 100, "fields": ["LinkTitle", "ReportFrequency", "ProducingObligationID", "ReportSourceRef"], "query": "<GroupBy Collapse='FALSE'><FieldRef Name='ReportName'/></GroupBy><OrderBy><FieldRef Name='SortOrder'/></OrderBy>" }
+      ]
+    }
+  ]
+}

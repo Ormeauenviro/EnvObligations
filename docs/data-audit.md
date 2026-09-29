@@ -1,7 +1,7 @@
 # Phase 1 – Data audit and mapping
 
 **Source:** `source/DTI-HSEQ-TP002.1_Environmental_Compliance_Obligations_Register_Rev2_DRAFT_DH.xlsx` (TP002.1 Rev 2 DRAFT, QTMP Ormeau Maintenance Facility)
-**Status:** Draft for review. No lists have been built yet.
+**Status:** Approved 29/09/2026. **All decisions D-01 to D-16 were accepted as recommended.** Phase 2 implements them in [`list-schema.md`](list-schema.md).
 **Evidence:** Every count and value below comes from `import/audit_workbook.py`. Its full output (the row-by-row classification, column fill counts, every distinct value, every hyperlink and every cell comment) is in [`data-audit-inventory.md`](data-audit-inventory.md). To regenerate it:
 
 ```bash
@@ -392,7 +392,7 @@ Proposed Responsible Role choices: Environmental and Sustainability Team · Envi
 
 ---
 
-## 7. Decisions needed before Phase 2
+## 7. Decisions (all accepted as recommended, 29/09/2026)
 
 | ID | Decision | My recommendation |
 |---|---|---|
