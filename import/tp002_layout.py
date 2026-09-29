@@ -32,8 +32,10 @@ Canonical field names used in the column maps (a sheet maps a subset of these):
 from __future__ import annotations
 
 import re
+import zipfile
 from dataclasses import dataclass, field
 from typing import Any
+from xml.etree import ElementTree as ET
 
 # The workbook was saved from this SharePoint library. Relative hyperlinks in the
 # DA sheets ("../../../../:f:/s/DTI-20151005_QTMP/...") resolve against it.
@@ -262,3 +264,80 @@ def is_info_only(row: dict[str, Any]) -> bool:
         if isinstance(value, str) and value.split("\n")[0].strip().lower() in INFO_ONLY_MARKERS:
             return True
     return False
+
+
+# ---------------------------------------------------------------------------
+# Row classification (shared by the audit and the transform)
+# ---------------------------------------------------------------------------
+
+def row_values(ws, r: int, columns: dict[str, str]) -> dict:
+    return {fld: ws[f"{col}{r}"].value for col, fld in columns.items()}
+
+
+def classify(ws, r: int, block: Block, header_texts: set[str]) -> tuple[str, str]:
+    """Return (class, reason) for one row inside a block's range."""
+    raw = row_values(ws, r, block.columns)
+    cleaned = {k: clean_text(v) for k, v in raw.items()}
+    filled = {k: v for k, v in cleaned.items() if v is not None}
+    if not filled:
+        has_nbsp = any(isinstance(v, str) and v.strip(" \u00a0") == "" and v for v in raw.values())
+        return "blank", "only non-breaking spaces" if has_nbsp else ""
+    if {str(v).strip() for v in filled.values()} <= header_texts:
+        return "repeated-header", ""
+    if block.hidden:
+        if set(filled) == {"location"}:
+            return "legacy-stub", f"only '{filled['location']}' in column A (hidden row)"
+        return "legacy-hidden", "hidden legacy approval summary row"
+    if is_info_only(cleaned):
+        return "info-only", "Note/Noted in action, responsibility or status"
+    if (filled.get("condition_no") and not filled.get("location") and not filled.get("stage")):
+        return "sub-condition", f"condition {filled['condition_no']} continues the row above"
+    req = filled.get("requirement")
+    if req is None:
+        return "flag", "no requirement text"
+    if isinstance(req, str) and len(req) < 5:
+        return "flag", f"requirement is a placeholder ({req!r})"
+    return "obligation", ""
+
+
+# ---------------------------------------------------------------------------
+# Threaded comments (openpyxl only exposes the legacy fallback text, not the author)
+# ---------------------------------------------------------------------------
+_NS = {
+    "m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main",
+    "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
+    "rel": "http://schemas.openxmlformats.org/package/2006/relationships",
+    "tc": "http://schemas.microsoft.com/office/spreadsheetml/2018/threadedcomments",
+}
+
+
+def _rels(z: zipfile.ZipFile, path: str) -> dict[str, tuple[str, str]]:
+    if path not in z.namelist():
+        return {}
+    root = ET.fromstring(z.read(path))
+    return {r.get("Id"): (r.get("Type", ""), r.get("Target", "")) for r in root.findall("rel:Relationship", _NS)}
+
+
+def load_threaded_comments(xlsx_path) -> dict[tuple[str, str], list[tuple[str, str]]]:
+    """Return {(sheet name, cell ref): [(author, text), ...]} in thread order."""
+    out: dict[tuple[str, str], list[tuple[str, str]]] = {}
+    with zipfile.ZipFile(xlsx_path) as z:
+        people = {}
+        if "xl/persons/person.xml" in z.namelist():
+            for p in ET.fromstring(z.read("xl/persons/person.xml")).findall("tc:person", _NS):
+                people[p.get("id")] = " ".join(p.get("displayName", "").split())
+        wb_rels = _rels(z, "xl/_rels/workbook.xml.rels")
+        workbook = ET.fromstring(z.read("xl/workbook.xml"))
+        for sheet in workbook.find("m:sheets", _NS):
+            rid = sheet.get(f"{{{_NS['r']}}}id")
+            target = wb_rels[rid][1]  # e.g. worksheets/sheet4.xml
+            sheet_file = target.split("/")[-1]
+            for rtype, rtarget in _rels(z, f"xl/worksheets/_rels/{sheet_file}.rels").values():
+                if not rtype.endswith("/threadedComment"):
+                    continue
+                tc_path = "xl/" + rtarget.replace("../", "")
+                for c in ET.fromstring(z.read(tc_path)).findall("tc:threadedComment", _NS):
+                    text = " ".join((c.findtext("tc:text", "", _NS) or "").split())
+                    out.setdefault((sheet.get("name"), c.get("ref")), []).append(
+                        (people.get(c.get("personId"), "Unknown"), text))
+    return out

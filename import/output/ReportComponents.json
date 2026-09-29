@@ -1,0 +1,222 @@
+{
+ "list": "Report Components",
+ "url": "Lists/ReportComponents",
+ "key": "ReportComponents",
+ "keyFields": [
+  "Title",
+  "ReportName"
+ ],
+ "liveFields": [],
+ "createOnly": false,
+ "count": 26,
+ "items": [
+  {
+   "Title": "Foreman's daily site diary",
+   "ReportName": "Monitoring data made available to TMR",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-005",
+   "SortOrder": 13
+  },
+  {
+   "Title": "Maps and records of soil reuse in permanent works",
+   "ReportName": "Monitoring data made available to TMR",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-005",
+   "SortOrder": 15
+  },
+  {
+   "Title": "Monthly records of water volumes reused or released on the site",
+   "ReportName": "Monitoring data made available to TMR",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-005",
+   "SortOrder": 16
+  },
+  {
+   "Title": "PFAS waste tracking register",
+   "ReportName": "Monitoring data made available to TMR",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-005",
+   "SortOrder": 17
+  },
+  {
+   "Title": "Progressive erosion and sediment control plans",
+   "ReportName": "Monitoring data made available to TMR",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-005",
+   "SortOrder": 19
+  },
+  {
+   "Title": "Weekly Environmental Inspection Records",
+   "ReportName": "Monitoring data made available to TMR",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-005",
+   "SortOrder": 24
+  },
+  {
+   "Title": "Any document that was prepared or updated during the month including relevant construction methodologies",
+   "ReportName": "PFAS Monthly Compliance Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-004",
+   "SortOrder": 6
+  },
+  {
+   "Title": "Community complaints or feedback received pertaining to Compliance Matters",
+   "ReportName": "PFAS Monthly Compliance Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-004",
+   "SortOrder": 8
+  },
+  {
+   "Title": "Construction activities undertaken in relation to the construction program and upcoming construction activities that may interact with low level concentrations of PFAS",
+   "ReportName": "PFAS Monthly Compliance Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-004",
+   "SortOrder": 9
+  },
+  {
+   "Title": "Details of any environmental incidents pertaining to Compliance Matters",
+   "ReportName": "PFAS Monthly Compliance Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-004",
+   "SortOrder": 10
+  },
+  {
+   "Title": "Details of any non-conformance reports pertaining to Compliance Matters, including any corrective and preventative measures taken and whether the compliance issues has been adequately resolved",
+   "ReportName": "PFAS Monthly Compliance Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-004",
+   "SortOrder": 11
+  },
+  {
+   "Title": "Details of inspections and audits undertaken and the outcome of the inspection and audits",
+   "ReportName": "PFAS Monthly Compliance Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-004",
+   "SortOrder": 12
+  },
+  {
+   "Title": "Quantity of water treated and reused on the project and where it was reused",
+   "ReportName": "PFAS Monthly Compliance Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-004",
+   "SortOrder": 20
+  },
+  {
+   "Title": "Records of soil reused on the Project",
+   "ReportName": "PFAS Monthly Compliance Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-004",
+   "SortOrder": 21
+  },
+  {
+   "Title": "Results of monitoring data and discussion on compliance",
+   "ReportName": "PFAS Monthly Compliance Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-004",
+   "SortOrder": 22
+  },
+  {
+   "Title": "Weekly Environmental Inspection Records",
+   "ReportName": "PFAS Monthly Compliance Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.3 Reporting and Records",
+   "ProducingObligationID": "CEMP-004",
+   "SortOrder": 24
+  },
+  {
+   "Title": "CMP Monthly Audit template",
+   "ReportName": "CMP Monthly Audit Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.1",
+   "ProducingObligationID": "CEMP-006B",
+   "SortOrder": 7
+  },
+  {
+   "Title": "Foreman's daily site diary",
+   "ReportName": "CMP Monthly Audit Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.1",
+   "ProducingObligationID": "CEMP-006B",
+   "SortOrder": 13
+  },
+  {
+   "Title": "Weekly Environmental Inspection Records",
+   "ReportName": "CMP Monthly Audit Report",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "CMP (B) Section 13.1",
+   "ProducingObligationID": "CEMP-006B",
+   "SortOrder": 24
+  },
+  {
+   "Title": "Reviewed and updated Compliance Register",
+   "ReportName": "Compliance Register",
+   "ReportFrequency": "Monthly",
+   "ReportSourceRef": "EMP (D) Section 6.4 and 8.1 CEMP (B) Section 8.3",
+   "ProducingObligationID": "CEMP-039",
+   "SortOrder": 23
+  },
+  {
+   "Title": "Analytical data to demonstrate that material was reused correctly and in accordance with the CMP",
+   "ReportName": "CMP Close Out Report",
+   "ReportFrequency": "Post construction",
+   "ReportSourceRef": "CMP (B) Section 15 Close Out Management",
+   "ProducingObligationID": "CEMP-003",
+   "SortOrder": 5
+  },
+  {
+   "Title": "Geospatial coordinates in electronic format of any soil samples collected during soil testing data",
+   "ReportName": "CMP Close Out Report",
+   "ReportFrequency": "Post construction",
+   "ReportSourceRef": "CMP (B) Section 15 Close Out Management",
+   "ProducingObligationID": "CEMP-003",
+   "SortOrder": 14
+  },
+  {
+   "Title": "Maps and records of soil reuse in permanent works",
+   "ReportName": "CMP Close Out Report",
+   "ReportFrequency": "Post construction",
+   "ReportSourceRef": "CMP (B) Section 15 Close Out Management",
+   "ProducingObligationID": "CEMP-003",
+   "SortOrder": 15
+  },
+  {
+   "Title": "Photographic evidence / logs of site works",
+   "ReportName": "CMP Close Out Report",
+   "ReportFrequency": "Post construction",
+   "ReportSourceRef": "CMP (B) Section 15 Close Out Management",
+   "ProducingObligationID": "CEMP-003",
+   "SortOrder": 18
+  },
+  {
+   "Title": "Quantity of water treated and reused on the project and where it was reused",
+   "ReportName": "CMP Close Out Report",
+   "ReportFrequency": "Post construction",
+   "ReportSourceRef": "CMP (B) Section 15 Close Out Management",
+   "ProducingObligationID": "CEMP-003",
+   "SortOrder": 20
+  },
+  {
+   "Title": "Records of soil reused on the Project",
+   "ReportName": "CMP Close Out Report",
+   "ReportFrequency": "Post construction",
+   "ReportSourceRef": "CMP (B) Section 15 Close Out Management",
+   "ProducingObligationID": "CEMP-003",
+   "SortOrder": 21
+  }
+ ]
+}

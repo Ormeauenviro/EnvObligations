@@ -1,0 +1,362 @@
+{
+ "list": "Source Documents",
+ "url": "Lists/SourceDocuments",
+ "key": "SourceDocuments",
+ "keyFields": [
+  "DocKey"
+ ],
+ "liveFields": [
+  "Version",
+  "DocDate",
+  "DocLink",
+  "FolderLink",
+  "Provided",
+  "Comments"
+ ],
+ "createOnly": false,
+ "count": 27,
+ "items": [
+  {
+   "DocKey": "SCHED-C1",
+   "Title": "Schedule C1 Performance Specification (Ormeau Facility)",
+   "Category": "Specification",
+   "Reference": null,
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": null
+  },
+  {
+   "DocKey": "MD-13-320",
+   "Title": "Environmental Planning and Management (EPM) Framework",
+   "Category": "Specification",
+   "Reference": "MD-13-320",
+   "Version": "4",
+   "DocDate": "2020-09-28",
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": null
+  },
+  {
+   "DocKey": "MD-12-164",
+   "Title": "Contractor Safety and Environment Management",
+   "Category": "Specification",
+   "Reference": "MD-12-164",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": false,
+   "Comments": null
+  },
+  {
+   "DocKey": "MD-15-3",
+   "Title": "Vegetation Management",
+   "Category": "Specification",
+   "Reference": "MD-15-3",
+   "Version": "1.1",
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": null
+  },
+  {
+   "DocKey": "MD-15-315",
+   "Title": "Noise Management (Environmental) Standard",
+   "Category": "Specification",
+   "Reference": "MD-15-315",
+   "Version": "3",
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": false,
+   "Comments": null
+  },
+  {
+   "DocKey": "MD-15-316",
+   "Title": "Noise and Vibration Assessment (Environment)",
+   "Category": "Specification",
+   "Reference": "MD-15-316",
+   "Version": "3",
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": false,
+   "Comments": null
+  },
+  {
+   "DocKey": "MD-15-317",
+   "Title": "Noise and Vibration Management (Environment) Procedure",
+   "Category": "Specification",
+   "Reference": "MD-15-317",
+   "Version": "3",
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": false,
+   "Comments": null
+  },
+  {
+   "DocKey": "ENV-PROCESSES-MANUAL",
+   "Title": "Environmental Processes Manual",
+   "Category": "Specification",
+   "Reference": null,
+   "Version": null,
+   "DocDate": "2023-02-01",
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": "Noted - the requirements in this document are not relevant to the scope of works"
+  },
+  {
+   "DocKey": "SCHED-A43",
+   "Title": "Schedule A43 Cultural Heritage Management Plan - Jabree",
+   "Category": "Heritage",
+   "Reference": "13704082",
+   "Version": null,
+   "DocDate": "2023-06-06",
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": null
+  },
+  {
+   "DocKey": "SCHED-A44",
+   "Title": "Schedule A44 Partial Clearance Report - Danggan Balun",
+   "Category": "Heritage",
+   "Reference": null,
+   "Version": null,
+   "DocDate": "2023-06-19",
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": null
+  },
+  {
+   "DocKey": "ADR-WWBW",
+   "Title": "Accepted development requirements for operational work that is constructing or raising waterway barrier works",
+   "Category": "WWBW",
+   "Reference": null,
+   "Version": null,
+   "DocDate": "2018-10-01",
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": null
+  },
+  {
+   "DocKey": "RPP-WSS-2013-726",
+   "Title": "Riverine protection permit exemption requirements",
+   "Category": "RPP Exemption",
+   "Reference": "WSS/2013/726",
+   "Version": "2.03",
+   "DocDate": "2023-06-02",
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": null
+  },
+  {
+   "DocKey": "CMP-OMF",
+   "Title": "Compliance Management Plan - Ormeau Facility",
+   "Category": "CMP",
+   "Reference": null,
+   "Version": "C",
+   "DocDate": "2023-10-12",
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": "Filename: COMPARE_Ormeau Facility PFAS CMP_Rev C 13Oct2023 vs Rev B 28Sept2023"
+  },
+  {
+   "DocKey": "SDA-2402-39300",
+   "Title": "SARA Decision Notice 2402-39300 SDA - Bridge Creek Diversion",
+   "Category": "Development approval",
+   "Reference": "2402-39300 SDA",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgDZYy1TbaauT6J76Odx-8BSAeileb2BW8MbIbprb-s2Rr4?e=qf3gBR",
+    "description": "01. DA OPEN__Bridge Creek_Diversion 2408-41693 SPD_2402-39300 SDA"
+   },
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14)."
+  },
+  {
+   "DocKey": "SDA-2506-46598",
+   "Title": "SARA Decision Notice 2506-46598 SDA - No Name Creek waterway barrier works",
+   "Category": "Development approval",
+   "Reference": "2506-46598 SDA",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgC9_6ylscTTQLUfc0r2PQAoAfLWUralj0nfEskS10RG9ts?e=SpMwNj",
+    "description": "02. DA OPEN_No-Name Creek Diversion_ 2407-41572 SPD_2312-38409 SDA"
+   },
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14)."
+  },
+  {
+   "DocKey": "SDA-2308-36075",
+   "Title": "SARA Decision Notice 2308-36075 SDA - Marine plants (TNAR, temporary)",
+   "Category": "Development approval",
+   "Reference": "2308-36075 SDA",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:b:/s/DTI-20151005_QTMP/IQAqRM8uWFMKRb9dr00Mh9gOAbz3MJeecDj9lEy68yFqi8M?e=xEFijo",
+    "description": "2308-36075 SDA - Decision notice.pdf Condition 1, SARA Decision Notice 2308-36075 SDA"
+   },
+   "FolderLink": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBX-v2USA1MSJ41lIDzNxaOARISYfuTv-AYFRjnNelVgKc?e=AOOLiT",
+    "description": "Decision documents"
+   },
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).\nLegacy TP002 approval summary (hidden row 6): approval link https://dtinfrastructurecomau.sharepoint.com/:f:/r/sites/DTI-20151005_QTMP/Shared%20Documents/01-HSE%20HEALTH%20SAFETY%20%26%20ENVIRONMENT/HSE%2003%20Enviro%20Records/01_Approvals/Marine%20Plants%20Clearing%20-%20TNAR/Approval?csf=1&web=1&e=x3WFwg; due 2023-10-27; status Completed."
+  },
+  {
+   "DocKey": "SDA-2309-36966",
+   "Title": "SARA Decision Notice 2309-36966 SDA - Marine plants (NAC, permanent)",
+   "Category": "Development approval",
+   "Reference": "2309-36966 SDA",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:b:/s/DTI-20151005_QTMP/IQCjMvz9IHQATZOoehPw73OsASACwjVuuFQT4M_y_JFzyAo?e=F5XQTn",
+    "description": "2309-36966 SDA - Decision - approval with conditions.pdf"
+   },
+   "FolderLink": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgASyzHFvescSKX1uSiiCGLgAdTfatv8TrFwV0Q7tCCkBxk?e=WGnUzb",
+    "description": "Decision documents"
+   },
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).\nLegacy TP002 approval summary (hidden row 7): approval link https://dtinfrastructurecomau.sharepoint.com/:b:/s/DTI-20151005_QTMP/EYR25SuAvtlHg407yQ1skqMByNrIwH_vSfLUZ5z-eVL82g?e=h1buSW; due 2023-10-28; status Compliant. TP002 row 7 quoted this permit as 2309-36996 SDA; 2309-36966 matches the decision notice (D-08)."
+  },
+  {
+   "DocKey": "EMP",
+   "Title": "Environmental Management Plan - Ormeau Facility",
+   "Category": "Management plan",
+   "Reference": "EMP (D)",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14)."
+  },
+  {
+   "DocKey": "CEMP",
+   "Title": "Construction Environmental Management Plan - Ormeau Facility (incl. annexes)",
+   "Category": "Management plan",
+   "Reference": "CEMP (B)",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14)."
+  },
+  {
+   "DocKey": "PLAN-FISH-SALVAGE",
+   "Title": "Fish Salvage Plan - Bridge Creek",
+   "Category": "Management plan",
+   "Reference": "Fish Salvage Plan",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14)."
+  },
+  {
+   "DocKey": "PLAN-REHAB",
+   "Title": "Rehabilitation & Remediation Plan - Bridge Creek",
+   "Category": "Management plan",
+   "Reference": "Rehabilitation & Remediation Plan",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14)."
+  },
+  {
+   "DocKey": "PLAN-FISH-PASSAGE",
+   "Title": "Fish Passage Monitoring Plan - Bridge Creek",
+   "Category": "Management plan",
+   "Reference": "Fish Passage Monitoring Plan",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14)."
+  },
+  {
+   "DocKey": "PLAN-AQUATIC-PLANT",
+   "Title": "Aquatic Plant Monitoring Plan - Bridge Creek",
+   "Category": "Management plan",
+   "Reference": "Aquatic Plant Monitoring Plan",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14)."
+  },
+  {
+   "DocKey": "PLAN-MARINE-RESTORATION",
+   "Title": "Marine Plant Restoration Plan (WGJV)",
+   "Category": "Management plan",
+   "Reference": "Marine Plant Restoration Plan",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14)."
+  },
+  {
+   "DocKey": "SUBCONTRACT-A",
+   "Title": "Subcontract for Ormeau Facility - Part A Preliminary Matters",
+   "Category": "Contract",
+   "Reference": "Subcontract Part A",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14)."
+  },
+  {
+   "DocKey": "SCHED-A5",
+   "Title": "Schedule A5 Management Systems and Management Plans",
+   "Category": "Specification",
+   "Reference": "Schedule A5",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14)."
+  },
+  {
+   "DocKey": "ISO-14001",
+   "Title": "ISO 14001:2015 Environmental management systems",
+   "Category": "Standard",
+   "Reference": "ISO 14001:2015",
+   "Version": null,
+   "DocDate": null,
+   "DocLink": null,
+   "FolderLink": null,
+   "Provided": true,
+   "Comments": "Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14)."
+  }
+ ]
+}

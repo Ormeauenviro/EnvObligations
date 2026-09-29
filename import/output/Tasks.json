@@ -1,0 +1,80 @@
+{
+ "list": "Obligation Tasks",
+ "url": "Lists/ObligationTasks",
+ "key": "Tasks",
+ "keyFields": [
+  "ObligationID",
+  "TaskOrder"
+ ],
+ "liveFields": [
+  "Assignee",
+  "DueDate",
+  "Done",
+  "DoneDate",
+  "Notes"
+ ],
+ "createOnly": false,
+ "count": 4,
+ "items": [
+  {
+   "Title": "(a) a temporary haul crossing, referred to as Western Haul Road Crossing consisting of 3 x 600mm diameter pipes within an unnamed tributary of Bridge Creek at -27.760689, 153.251562",
+   "Obligation": {
+    "lookup": "Obligations",
+    "key": "NN-DA-001"
+   },
+   "ObligationID": "NN-DA-001",
+   "ObligationSummary": "Development limited to approved four waterway barrier works as specified in Condition 1:",
+   "TaskOrder": 1,
+   "Assignee": "DanielBlunt@dtinfrastructure.com.au",
+   "DueDate": null,
+   "Done": true,
+   "DoneDate": null,
+   "Notes": null
+  },
+  {
+   "Title": "(b) a permanent box culvert, referred to as Culvert 1A consisting of 5 x 3000x1200mm box culverts within an unnamed tributary of Bridge Creek at -27.760797, 153.251120 as shown on Culvert 1A Plan and Section, prepared by DT Infrastructure and wgjv, dated…",
+   "Obligation": {
+    "lookup": "Obligations",
+    "key": "NN-DA-001"
+   },
+   "ObligationID": "NN-DA-001",
+   "ObligationSummary": "Development limited to approved four waterway barrier works as specified in Condition 1:",
+   "TaskOrder": 2,
+   "Assignee": "DanielBlunt@dtinfrastructure.com.au",
+   "DueDate": null,
+   "Done": false,
+   "DoneDate": null,
+   "Notes": "(b) a permanent box culvert, referred to as Culvert 1A consisting of 5 x 3000x1200mm box culverts within an unnamed tributary of Bridge Creek at -27.760797, 153.251120 as shown on Culvert 1A Plan and Section, prepared by DT Infrastructure and wgjv, dated 11/24, Consultant DWG No. QTMP-DJV-OSYCIMC00-DRG-SD2001 and issue A"
+  },
+  {
+   "Title": "(c) a permanent box culvert, referred to as Culvert 1B consisting of 5 x 3000x1200mm box culverts within an unnamed tributary of Bridge Creek at -27.760660, 153.251720 as shown on Culvert 1B – Plan and Section, prepared by DT Infrastructure and wgjv, dat…",
+   "Obligation": {
+    "lookup": "Obligations",
+    "key": "NN-DA-001"
+   },
+   "ObligationID": "NN-DA-001",
+   "ObligationSummary": "Development limited to approved four waterway barrier works as specified in Condition 1:",
+   "TaskOrder": 3,
+   "Assignee": "DanielBlunt@dtinfrastructure.com.au",
+   "DueDate": null,
+   "Done": false,
+   "DoneDate": null,
+   "Notes": "(c) a permanent box culvert, referred to as Culvert 1B consisting of 5 x 3000x1200mm box culverts within an unnamed tributary of Bridge Creek at -27.760660, 153.251720 as shown on Culvert 1B – Plan and Section, prepared by DT Infrastructure and wgjv, dated 23/09/24, Document No. QTMP-DJV-OMFCIMC00-DRG-SD1001 and issue A"
+  },
+  {
+   "Title": "(d) a permanent box culvert, referred to as Culvert 1D consisting of 4 x 3000x1200mm box culverts within an unnamed tributary of Bridge Creek at -27.761025, 153.254332 as shown on Culvert 1D Plan and Section, prepared by DT Infrastructure and wgjv, dated…",
+   "Obligation": {
+    "lookup": "Obligations",
+    "key": "NN-DA-001"
+   },
+   "ObligationID": "NN-DA-001",
+   "ObligationSummary": "Development limited to approved four waterway barrier works as specified in Condition 1:",
+   "TaskOrder": 4,
+   "Assignee": "DanielBlunt@dtinfrastructure.com.au",
+   "DueDate": null,
+   "Done": false,
+   "DoneDate": null,
+   "Notes": "(d) a permanent box culvert, referred to as Culvert 1D consisting of 4 x 3000x1200mm box culverts within an unnamed tributary of Bridge Creek at -27.761025, 153.254332 as shown on Culvert 1D Plan and Section, prepared by DT Infrastructure and wgjv, dated 11/24, Consultant DWG No. QTMP-DJV-OSYCIMC00-DRG-SD2051 and issue A."
+  }
+ ]
+}

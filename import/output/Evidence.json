@@ -1,0 +1,871 @@
+{
+ "list": "Evidence",
+ "url": "Lists/Evidence",
+ "key": "Evidence",
+ "keyFields": [
+  "ObligationID",
+  "OccurrenceKey",
+  "EvidenceURL"
+ ],
+ "liveFields": [
+  "EvidenceDate",
+  "AddedBy",
+  "Notes"
+ ],
+ "createOnly": false,
+ "count": 71,
+ "items": [
+  {
+   "Title": "01. DA OPEN__Bridge Creek_Diversion 2408-41693 SPD_2402-39300 SDA",
+   "ObligationID": "BC-DA-001",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgDZYy1TbaauT6J76Odx-8BSAeileb2BW8MbIbprb-s2Rr4?e=qf3gBR",
+    "description": "01. DA OPEN__Bridge Creek_Diversion 2408-41693 SPD_2402-39300 SDA"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L6"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-001",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!M6"
+  },
+  {
+   "Title": "01. DA OPEN__Bridge Creek_Diversion 2408-41693 SPD_2402-39300 SDA",
+   "ObligationID": "BC-DA-002",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgDZYy1TbaauT6J76Odx-8BSAeileb2BW8MbIbprb-s2Rr4?e=qf3gBR",
+    "description": "01. DA OPEN__Bridge Creek_Diversion 2408-41693 SPD_2402-39300 SDA"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L7"
+  },
+  {
+   "Title": "Bridge Creek - fish salvage",
+   "ObligationID": "BC-DA-004",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgAdVLxqfUG2RbVad7xcDnP2AcHM8JMenGa4-9B_H3GHgK4?e=9IXdRf",
+    "description": "Bridge Creek - fish salvage"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L9"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-004",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!M9"
+  },
+  {
+   "Title": "DAF Notifications",
+   "ObligationID": "BC-DA-005",
+   "OccurrenceKey": "BC-DA-005|COMMENCE",
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBGZj5MLchaS6NVszzoGHqnAewLHBIlkPWA3E314zHnqYY?e=rWf9HS",
+    "description": "DAF Notifications"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L10"
+  },
+  {
+   "Title": "Waste Transfer Certs",
+   "ObligationID": "BC-DA-006",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgCeNg-uicevRq2xd7hNZdoFAfFNbJd2DArHVhGnw_2H6IE?e=Kdv3br",
+    "description": "Waste Transfer Certs"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L11"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-006",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!M11"
+  },
+  {
+   "Title": "DPI_DAF",
+   "ObligationID": "BC-DA-007",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgAnc2ql6ZkHTJNYpfI3XAcQAelbfeHoMNfdJsEWisydo4U?e=1nwnv8",
+    "description": "DPI_DAF"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L12"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-007",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!M12"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-008",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!M13"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-009",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L14"
+  },
+  {
+   "Title": "Memo review of fish passage issues at Ormeau rail facility -Final.pdf",
+   "ObligationID": "BC-DA-009",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:b:/s/DTI-20151005_QTMP/IQBnrZuCxvs_RpRFnz1NmueJAZlw0Y3v1mbnbgRLGrJT4KY?e=vEQvhf",
+    "description": "Memo review of fish passage issues at Ormeau rail facility -Final.pdf"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!M14"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-011",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L16"
+  },
+  {
+   "Title": "Memo review of fish passage issues at Ormeau rail facility -Final.pdf",
+   "ObligationID": "BC-DA-011",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:b:/s/DTI-20151005_QTMP/IQBnrZuCxvs_RpRFnz1NmueJAZlw0Y3v1mbnbgRLGrJT4KY?e=vEQvhf",
+    "description": "Memo review of fish passage issues at Ormeau rail facility -Final.pdf"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!M16"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-012",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L17"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-013",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L18"
+  },
+  {
+   "Title": "01. DA OPEN__Bridge Creek_Diversion 2408-41693 SPD_2402-39300 SDA",
+   "ObligationID": "BC-DA-015",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgDZYy1TbaauT6J76Odx-8BSAeileb2BW8MbIbprb-s2Rr4?e=qf3gBR",
+    "description": "01. DA OPEN__Bridge Creek_Diversion 2408-41693 SPD_2402-39300 SDA"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L22"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-015",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!M22"
+  },
+  {
+   "Title": "Bridge Creek - fish salvage",
+   "ObligationID": "BC-DA-016",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgAdVLxqfUG2RbVad7xcDnP2AcHM8JMenGa4-9B_H3GHgK4?e=9IXdRf",
+    "description": "Bridge Creek - fish salvage"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L23"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-017",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L24"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-018",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L25"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-019",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L26"
+  },
+  {
+   "Title": "DTI QTMP OMF_Construction Water Monitoring .xlsx",
+   "ObligationID": "BC-DA-020",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:x:/s/DTI-20151005_QTMP/IQD7_lqLHFGVRqJIzvAOnQDIAd8dXpmvEYxu1n0tgpus0H4?e=UHa9B7",
+    "description": "DTI QTMP OMF_Construction Water Monitoring .xlsx"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L27"
+  },
+  {
+   "Title": "DTI QTMP OMF_Construction Water Monitoring .xlsx",
+   "ObligationID": "BC-DA-021",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:x:/s/DTI-20151005_QTMP/IQD7_lqLHFGVRqJIzvAOnQDIAd8dXpmvEYxu1n0tgpus0H4?e=UHa9B7",
+    "description": "DTI QTMP OMF_Construction Water Monitoring .xlsx"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L28"
+  },
+  {
+   "Title": "Rev 2- Dewatering and Fish Salvage Reports - TO DAF",
+   "ObligationID": "BC-DA-024",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgCY5aVN9JqDS5aWNDUkL3KEAfSKz4NyH8ONsBbxaAjX9mI?e=7bAtP9",
+    "description": "Rev 2- Dewatering and Fish Salvage Reports - TO DAF"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L31"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-026",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L33"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-027",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L34"
+  },
+  {
+   "Title": "01 TOPO Audits and Inspections",
+   "ObligationID": "BC-DA-031",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgCFbnwOjNLDTZTlyr5LHA_kAZk4ZXmdGwpxZad__BB7h34?e=JQqyJS",
+    "description": "01 TOPO Audits and Inspections"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L38"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-032",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!M39"
+  },
+  {
+   "Title": "DTI QTMP OMF_Construction Water Monitoring .xlsx",
+   "ObligationID": "BC-DA-033",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:x:/s/DTI-20151005_QTMP/IQD7_lqLHFGVRqJIzvAOnQDIAd8dXpmvEYxu1n0tgpus0H4?e=UHa9B7",
+    "description": "DTI QTMP OMF_Construction Water Monitoring .xlsx"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L40"
+  },
+  {
+   "Title": "03_Incidents and NCR's",
+   "ObligationID": "BC-DA-036",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgDe07nUvwl4RrwFD4xErYN3AWf3DSmODqkFm8jlQzd3Lfg?e=GJpqzv",
+    "description": "03_Incidents and NCR's"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L43"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "BC-DA-036",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!M43"
+  },
+  {
+   "Title": "Weed survey",
+   "ObligationID": "BC-DA-039",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgAeWju85UYKRIXTFzacdTs8AU9_WS-ic1_-JguN7OP3zHg?e=baBdWt",
+    "description": "Weed survey"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Bridge Creek DA Conditions!L46"
+  },
+  {
+   "Title": "02. DA OPEN_No-Name Creek Diversion_ 2407-41572 SPD_2312-38409 SDA",
+   "ObligationID": "NN-DA-001",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgC9_6ylscTTQLUfc0r2PQAoAfLWUralj0nfEskS10RG9ts?e=SpMwNj",
+    "description": "02. DA OPEN_No-Name Creek Diversion_ 2407-41572 SPD_2312-38409 SDA"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 No Name DA Conditions!M6"
+  },
+  {
+   "Title": "Waste Transfer Certs",
+   "ObligationID": "NN-DA-003",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgCeNg-uicevRq2xd7hNZdoFAfFNbJd2DArHVhGnw_2H6IE?e=Kdv3br",
+    "description": "Waste Transfer Certs"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 No Name DA Conditions!M9"
+  },
+  {
+   "Title": "DPI_DAF",
+   "ObligationID": "NN-DA-004",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgAnc2ql6ZkHTJNYpfI3XAcQAelbfeHoMNfdJsEWisydo4U?e=1nwnv8",
+    "description": "DPI_DAF"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 No Name DA Conditions!M10"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "NN-DA-004",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 No Name DA Conditions!N10"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "NN-DA-005",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 No Name DA Conditions!M11"
+  },
+  {
+   "Title": "Memo review of fish passage issues at Ormeau rail facility -Final.pdf",
+   "ObligationID": "NN-DA-005",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:b:/s/DTI-20151005_QTMP/IQBnrZuCxvs_RpRFnz1NmueJAZlw0Y3v1mbnbgRLGrJT4KY?e=vEQvhf",
+    "description": "Memo review of fish passage issues at Ormeau rail facility -Final.pdf"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 No Name DA Conditions!N11"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "NN-DA-006",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 No Name DA Conditions!M12"
+  },
+  {
+   "Title": "Memo review of fish passage issues at Ormeau rail facility -Final.pdf",
+   "ObligationID": "NN-DA-006",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:b:/s/DTI-20151005_QTMP/IQBnrZuCxvs_RpRFnz1NmueJAZlw0Y3v1mbnbgRLGrJT4KY?e=vEQvhf",
+    "description": "Memo review of fish passage issues at Ormeau rail facility -Final.pdf"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 No Name DA Conditions!N12"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "NN-DA-007",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 No Name DA Conditions!M13"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "NN-DA-008",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 No Name DA Conditions!M14"
+  },
+  {
+   "Title": "No-Name Creek - Fish Salvage",
+   "ObligationID": "NN-DA-009",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgCUPYIevMk_RZ57ODl8N38EAfC5PcZcKMnRNnE2MQa6g5o?e=LM1FYM",
+    "description": "No-Name Creek - Fish Salvage"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 No Name DA Conditions!M15"
+  },
+  {
+   "Title": "Post Works Notification_2506-46598 SDA Condition 10.pdf",
+   "ObligationID": "NN-DA-010",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:b:/s/DTI-20151005_QTMP/IQDT4rb_IYGzRqcd8uCmASEMAfDpp6MO4MbEmcOxROkp7Pk?e=HZlqJF",
+    "description": "Post Works Notification_2506-46598 SDA Condition 10.pdf"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 No Name DA Conditions!M16"
+  },
+  {
+   "Title": "2. Marine Plant DAs",
+   "ObligationID": "MP-TNAR-001",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgA840Qca9fdS4js3Nh932QpAWiAN2fTdcQQqu18IGtWfAg?e=4AhGhg",
+    "description": "2. Marine Plant DAs"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M23"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-TNAR-001",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!N23"
+  },
+  {
+   "Title": "Pre-works notification",
+   "ObligationID": "MP-TNAR-002",
+   "OccurrenceKey": "MP-TNAR-002|COMMENCE",
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBCu3ERju4oQKtmH1KfWknPAb8yNZ-ZuptASHTMDHPVq7E?e=Jmk0Gg",
+    "description": "Pre-works notification"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M24"
+  },
+  {
+   "Title": "Waste Transfer Certs",
+   "ObligationID": "MP-TNAR-003",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgCeNg-uicevRq2xd7hNZdoFAfFNbJd2DArHVhGnw_2H6IE?e=Kdv3br",
+    "description": "Waste Transfer Certs"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M25"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-TNAR-003",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!N25"
+  },
+  {
+   "Title": "DPI_DAF",
+   "ObligationID": "MP-TNAR-004",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgAnc2ql6ZkHTJNYpfI3XAcQAelbfeHoMNfdJsEWisydo4U?e=1nwnv8",
+    "description": "DPI_DAF"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M26"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-TNAR-004",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!N26"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-TNAR-005",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!N27"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-TNAR-005B",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M28"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-TNAR-006",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M29"
+  },
+  {
+   "Title": "Waste Transfer Certs",
+   "ObligationID": "MP-TNAR-006B",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgCeNg-uicevRq2xd7hNZdoFAfFNbJd2DArHVhGnw_2H6IE?e=Kdv3br",
+    "description": "Waste Transfer Certs"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M30"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-TNAR-006B",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!N30"
+  },
+  {
+   "Title": "2. Marine Plant DAs",
+   "ObligationID": "MP-NAC-001",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgA840Qca9fdS4js3Nh932QpAWiAN2fTdcQQqu18IGtWfAg?e=4AhGhg",
+    "description": "2. Marine Plant DAs"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M34"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-NAC-001",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!N34"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-NAC-002A",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M36"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-NAC-002B",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M37"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-NAC-002C",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M38"
+  },
+  {
+   "Title": "DAF Notifications",
+   "ObligationID": "MP-NAC-003",
+   "OccurrenceKey": "MP-NAC-003|COMMENCE",
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBGZj5MLchaS6NVszzoGHqnAewLHBIlkPWA3E314zHnqYY?e=rWf9HS",
+    "description": "DAF Notifications"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M39"
+  },
+  {
+   "Title": "Waste Transfer Certs",
+   "ObligationID": "MP-NAC-004",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgCeNg-uicevRq2xd7hNZdoFAfFNbJd2DArHVhGnw_2H6IE?e=Kdv3br",
+    "description": "Waste Transfer Certs"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M40"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-NAC-004",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!N40"
+  },
+  {
+   "Title": "DPI_DAF",
+   "ObligationID": "MP-NAC-005",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgAnc2ql6ZkHTJNYpfI3XAcQAelbfeHoMNfdJsEWisydo4U?e=1nwnv8",
+    "description": "DPI_DAF"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M41"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-NAC-005",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!N41"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-NAC-006",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M42"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-NAC-006B",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M43"
+  },
+  {
+   "Title": "Weekly Environmental Inspection Checklist_Full Report",
+   "ObligationID": "MP-NAC-007",
+   "OccurrenceKey": null,
+   "EvidenceURL": {
+    "url": "https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBTb9L0aVaPRZTWpBMRRfBiAR-K1xvWVeTeTqGqOWpyC50?e=xm8pzW",
+    "description": "Weekly Environmental Inspection Checklist_Full Report"
+   },
+   "EvidenceDate": null,
+   "AddedBy": null,
+   "Notes": "Imported from TP002 Marine Plants DA Conditions!M44"
+  }
+ ]
+}

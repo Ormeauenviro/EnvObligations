@@ -1,0 +1,79 @@
+{
+ "list": "Role Assignments",
+ "url": "Lists/RoleAssignments",
+ "key": "RoleAssignments",
+ "keyFields": [
+  "Title"
+ ],
+ "liveFields": [
+  "PrimaryPerson",
+  "AdditionalPeople",
+  "Notes"
+ ],
+ "createOnly": false,
+ "count": 10,
+ "items": [
+  {
+   "Title": "Environmental and Sustainability Team",
+   "PrimaryPerson": "DanielBlunt@dtinfrastructure.com.au",
+   "AdditionalPeople": [
+    "EthanLittle@dtinfrastructure.com.au"
+   ],
+   "Notes": null
+  },
+  {
+   "Title": "Environmental Manager",
+   "PrimaryPerson": "SamMoraes@dtinfrastructure.com.au",
+   "AdditionalPeople": null,
+   "Notes": null
+  },
+  {
+   "Title": "Environmental Advisor",
+   "PrimaryPerson": "RichardKightley@dtinfrastructure.com.au",
+   "AdditionalPeople": null,
+   "Notes": null
+  },
+  {
+   "Title": "Project Manager",
+   "PrimaryPerson": "DanielBlunt@dtinfrastructure.com.au",
+   "AdditionalPeople": null,
+   "Notes": "Also covers \"DT Infrastructure\" rows (D-11)"
+  },
+  {
+   "Title": "Construction Manager",
+   "PrimaryPerson": null,
+   "AdditionalPeople": null,
+   "Notes": "Unassigned - name to be confirmed"
+  },
+  {
+   "Title": "Site Manager",
+   "PrimaryPerson": null,
+   "AdditionalPeople": null,
+   "Notes": "Unassigned - name to be confirmed"
+  },
+  {
+   "Title": "Site Supervisor",
+   "PrimaryPerson": null,
+   "AdditionalPeople": null,
+   "Notes": "Unassigned - name to be confirmed"
+  },
+  {
+   "Title": "Engineering and Design Team",
+   "PrimaryPerson": null,
+   "AdditionalPeople": null,
+   "Notes": "Unassigned - name to be confirmed"
+  },
+  {
+   "Title": "Contractor",
+   "PrimaryPerson": null,
+   "AdditionalPeople": null,
+   "Notes": "Unassigned - name to be confirmed"
+  },
+  {
+   "Title": "Asset Owner / Operator",
+   "PrimaryPerson": null,
+   "AdditionalPeople": null,
+   "Notes": "Operation-phase owner (TMR/QR) - name to be confirmed"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+﻿DocKey,Title,Category,Reference,Version,DocDate,DocLink,FolderLink,Provided,Comments
+SCHED-C1,Schedule C1 Performance Specification (Ormeau Facility),Specification,,,,,,True,
+MD-13-320,Environmental Planning and Management (EPM) Framework,Specification,MD-13-320,4,2020-09-28,,,True,
+MD-12-164,Contractor Safety and Environment Management,Specification,MD-12-164,,,,,False,
+MD-15-3,Vegetation Management,Specification,MD-15-3,1.1,,,,True,
+MD-15-315,Noise Management (Environmental) Standard,Specification,MD-15-315,3,,,,False,
+MD-15-316,Noise and Vibration Assessment (Environment),Specification,MD-15-316,3,,,,False,
+MD-15-317,Noise and Vibration Management (Environment) Procedure,Specification,MD-15-317,3,,,,False,
+ENV-PROCESSES-MANUAL,Environmental Processes Manual,Specification,,,2023-02-01,,,True,Noted - the requirements in this document are not relevant to the scope of works
+SCHED-A43,Schedule A43 Cultural Heritage Management Plan - Jabree,Heritage,13704082,,2023-06-06,,,True,
+SCHED-A44,Schedule A44 Partial Clearance Report - Danggan Balun,Heritage,,,2023-06-19,,,True,
+ADR-WWBW,Accepted development requirements for operational work that is constructing or raising waterway barrier works,WWBW,,,2018-10-01,,,True,
+RPP-WSS-2013-726,Riverine protection permit exemption requirements,RPP Exemption,WSS/2013/726,2.03,2023-06-02,,,True,
+CMP-OMF,Compliance Management Plan - Ormeau Facility,CMP,,C,2023-10-12,,,True,Filename: COMPARE_Ormeau Facility PFAS CMP_Rev C 13Oct2023 vs Rev B 28Sept2023
+SDA-2402-39300,SARA Decision Notice 2402-39300 SDA - Bridge Creek Diversion,Development approval,2402-39300 SDA,,,,https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgDZYy1TbaauT6J76Odx-8BSAeileb2BW8MbIbprb-s2Rr4?e=qf3gBR,True,Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+SDA-2506-46598,SARA Decision Notice 2506-46598 SDA - No Name Creek waterway barrier works,Development approval,2506-46598 SDA,,,,https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgC9_6ylscTTQLUfc0r2PQAoAfLWUralj0nfEskS10RG9ts?e=SpMwNj,True,Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+SDA-2308-36075,"SARA Decision Notice 2308-36075 SDA - Marine plants (TNAR, temporary)",Development approval,2308-36075 SDA,,,https://dtinfrastructurecomau.sharepoint.com/:b:/s/DTI-20151005_QTMP/IQAqRM8uWFMKRb9dr00Mh9gOAbz3MJeecDj9lEy68yFqi8M?e=xEFijo,https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgBX-v2USA1MSJ41lIDzNxaOARISYfuTv-AYFRjnNelVgKc?e=AOOLiT,True,"Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+Legacy TP002 approval summary (hidden row 6): approval link https://dtinfrastructurecomau.sharepoint.com/:f:/r/sites/DTI-20151005_QTMP/Shared%20Documents/01-HSE%20HEALTH%20SAFETY%20%26%20ENVIRONMENT/HSE%2003%20Enviro%20Records/01_Approvals/Marine%20Plants%20Clearing%20-%20TNAR/Approval?csf=1&web=1&e=x3WFwg; due 2023-10-27; status Completed."
+SDA-2309-36966,"SARA Decision Notice 2309-36966 SDA - Marine plants (NAC, permanent)",Development approval,2309-36966 SDA,,,https://dtinfrastructurecomau.sharepoint.com/:b:/s/DTI-20151005_QTMP/IQCjMvz9IHQATZOoehPw73OsASACwjVuuFQT4M_y_JFzyAo?e=F5XQTn,https://dtinfrastructurecomau.sharepoint.com/:f:/s/DTI-20151005_QTMP/IgASyzHFvescSKX1uSiiCGLgAdTfatv8TrFwV0Q7tCCkBxk?e=WGnUzb,True,"Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+Legacy TP002 approval summary (hidden row 7): approval link https://dtinfrastructurecomau.sharepoint.com/:b:/s/DTI-20151005_QTMP/EYR25SuAvtlHg407yQ1skqMByNrIwH_vSfLUZ5z-eVL82g?e=h1buSW; due 2023-10-28; status Compliant. TP002 row 7 quoted this permit as 2309-36996 SDA; 2309-36966 matches the decision notice (D-08)."
+EMP,Environmental Management Plan - Ormeau Facility,Management plan,EMP (D),,,,,True,Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+CEMP,Construction Environmental Management Plan - Ormeau Facility (incl. annexes),Management plan,CEMP (B),,,,,True,Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+PLAN-FISH-SALVAGE,Fish Salvage Plan - Bridge Creek,Management plan,Fish Salvage Plan,,,,,True,Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+PLAN-REHAB,Rehabilitation & Remediation Plan - Bridge Creek,Management plan,Rehabilitation & Remediation Plan,,,,,True,Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+PLAN-FISH-PASSAGE,Fish Passage Monitoring Plan - Bridge Creek,Management plan,Fish Passage Monitoring Plan,,,,,True,Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+PLAN-AQUATIC-PLANT,Aquatic Plant Monitoring Plan - Bridge Creek,Management plan,Aquatic Plant Monitoring Plan,,,,,True,Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+PLAN-MARINE-RESTORATION,Marine Plant Restoration Plan (WGJV),Management plan,Marine Plant Restoration Plan,,,,,True,Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+SUBCONTRACT-A,Subcontract for Ormeau Facility - Part A Preliminary Matters,Contract,Subcontract Part A,,,,,True,Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+SCHED-A5,Schedule A5 Management Systems and Management Plans,Specification,Schedule A5,,,,,True,Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).
+ISO-14001,ISO 14001:2015 Environmental management systems,Standard,ISO 14001:2015,,,,,True,Added at import: cited in the register but not listed on TP002 _Doc Ref (D-14).

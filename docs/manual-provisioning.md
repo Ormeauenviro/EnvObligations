@@ -244,9 +244,9 @@ SharePoint can't change a column's type in place, and `Provision-Lists.ps1` warn
   | 2 | `ObligationID` | Obligation ID | Single line of text; Maximum number of characters: 255 | Yes | No | – |
   | 3 | `ObligationSummary` | Obligation Summary | Single line of text; Maximum number of characters: 255 | No | No | – |
   | 4 | `PeriodLabel` | Period Label | Single line of text; Maximum number of characters: 255 | Yes | No | – |
-  | 5 | `PeriodStart` | Period Start | Date and Time; Date and Time Format: Date Only; Display Format: Standard | Yes | No | – |
+  | 5 | `PeriodStart` | Period Start | Date and Time; Date and Time Format: Date Only; Display Format: Standard | No | No | – |
   | 6 | `PeriodEnd` | Period End | Date and Time; Date and Time Format: Date Only; Display Format: Standard | No | No | – |
-  | 7 | `PeriodDue` | Period Due | Date and Time; Date and Time Format: Date Only; Display Format: Standard | Yes | No | – |
+  | 7 | `PeriodDue` | Period Due | Date and Time; Date and Time Format: Date Only; Display Format: Standard | No | No | – |
   | 8 | `Assignee` | Assignee | Person or Group; Allow multiple selections: No; Allow selection of: People Only; Choose from: All Users | No | No | – |
   | 9 | `Status` | Status | Choice; Display choices using: Drop-Down Menu; Allow 'Fill-in' choices: No; Choices (one per line):<br>`Not started`<br>`Underway`<br>`Complete`<br>`Missing` | Yes | No | Not started |
   | 10 | `StatusComment` | Status Reason/Justification | Multiple lines of text; Number of lines: 6; Type of text: Plain text; Append Changes to Existing Text: No | No | No | – |

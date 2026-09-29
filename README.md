@@ -13,8 +13,8 @@ It uses Microsoft 365 standard connectors only.
 | Phase | Deliverable | State |
 |---|---|---|
 | 1 | Data audit and mapping – [`docs/data-audit.md`](docs/data-audit.md) | Approved 29/09/2026 (all decisions accepted) |
-| 2 | List schema and provisioning – [`docs/list-schema.md`](docs/list-schema.md), [`provision/`](provision/), [`docs/manual-provisioning.md`](docs/manual-provisioning.md) | **For review** |
-| 3 | Data transform and load (`import/`) | Not started |
+| 2 | List schema and provisioning – [`docs/list-schema.md`](docs/list-schema.md), [`provision/`](provision/), [`docs/manual-provisioning.md`](docs/manual-provisioning.md) | Accepted |
+| 3 | Data transform and load – [`docs/data-load.md`](docs/data-load.md), [`import/`](import/) | **For review** |
 | 4 | Power Apps canvas app (`app/`, `docs/app-build-guide.md`) | Not started |
 | 5 | Power Automate flows (`flows/`, `export/`) | Not started |
 
@@ -24,7 +24,7 @@ It uses Microsoft 365 standard connectors only.
 source/     Original TP002.1 workbook (input to the audit and transform)
 docs/       Audit, schema, build guides
 provision/  list-schema.json (source of truth), Provision-Lists.ps1, doc generator, tests
-import/     Workbook layout, audit, transform and load scripts
+import/     Workbook layout, audit, transform, loader, config (roles, milestones), output, tests
 app/        Power Apps YAML, one file per screen (Phase 4)
 flows/      Step-by-step Power Automate flow definitions (Phase 5)
 export/     Fallback TP002 workbook exporter (Phase 5)
@@ -51,10 +51,20 @@ Register-PnPEntraIDAppForInteractiveLogin -ApplicationName "PnP - QTMP Env Regis
 
 Then work through the verification checklist at the end of `docs/manual-provisioning.md`.
 
-### 3–5. *(added as each phase is approved)*
+### 3. Transform and load the register
+```bash
+python import/transform.py        # -> import/output/*.json, *.csv and import-report.md
+```
+```powershell
+./import/Load-Data.ps1 -SiteUrl https://<tenant>.sharepoint.com/sites/<site> -ClientId <app-id> -DryRun
+./import/Load-Data.ps1 -SiteUrl https://<tenant>.sharepoint.com/sites/<site> -ClientId <app-id>
+```
+People for each role are set in `import/config/role-assignments.csv`, and key project dates in `import/config/project-milestones.csv`. Edit them, then re-run both commands; the team's edits in SharePoint are never overwritten. Full details and browser checks are in `docs/data-load.md`.
+
+### 4–5. *(added as each phase is approved)*
 
 ## Changing the schema
 1. Edit `provision/list-schema.json`.
 2. `python provision/build_schema_docs.py` refreshes the generated doc sections.
-3. `python -m pytest provision` runs the schema checks, and `pwsh provision/tests/Test-Provisioning.ps1` runs the script against a mock SharePoint.
+3. `python -m pytest provision import` runs the schema and transform checks. `pwsh provision/tests/Test-Provisioning.ps1` and `pwsh import/tests/Test-Load.ps1` run the scripts against a mock SharePoint.
 4. Re-run `Provision-Lists.ps1`. It only applies the differences.

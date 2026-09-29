@@ -36,34 +36,8 @@ def md_escape(value, limit: int = 120) -> str:
     return text if len(text) <= limit else text[: limit - 1] + "\u2026"
 
 
-def row_values(ws, r: int, columns: dict[str, str]) -> dict:
-    return {fld: ws[f"{col}{r}"].value for col, fld in columns.items()}
-
-
-def classify(ws, r: int, block: L.Block, header_texts: set[str]) -> tuple[str, str]:
-    """Return (class, reason) for one row inside a block's range."""
-    raw = row_values(ws, r, block.columns)
-    cleaned = {k: L.clean_text(v) for k, v in raw.items()}
-    filled = {k: v for k, v in cleaned.items() if v is not None}
-    if not filled:
-        has_nbsp = any(isinstance(v, str) and v.strip(" \u00a0") == "" and v for v in raw.values())
-        return "blank", "only non-breaking spaces" if has_nbsp else ""
-    if {str(v).strip() for v in filled.values()} <= header_texts:
-        return "repeated-header", ""
-    if block.hidden:
-        if set(filled) == {"location"}:
-            return "legacy-stub", f"only '{filled['location']}' in column A (hidden row)"
-        return "legacy-hidden", "hidden legacy approval summary row"
-    if L.is_info_only(cleaned):
-        return "info-only", "Note/Noted in action, responsibility or status"
-    if (filled.get("condition_no") and not filled.get("location") and not filled.get("stage")):
-        return "sub-condition", f"condition {filled['condition_no']} continues the row above"
-    req = filled.get("requirement")
-    if req is None:
-        return "flag", "no requirement text"
-    if isinstance(req, str) and len(req) < 5:
-        return "flag", f"requirement is a placeholder ({req!r})"
-    return "obligation", ""
+row_values = L.row_values
+classify = L.classify
 
 
 def main(xlsx: Path, out: Path) -> None:

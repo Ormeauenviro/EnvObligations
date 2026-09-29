@@ -161,3 +161,80 @@ function Set-PnPView {
 }
 
 Export-ModuleMember -Function *
+
+# ---------------------------------------------------------------------------
+# List items (used by import/Load-Data.ps1 tests)
+# ---------------------------------------------------------------------------
+$script:Brisbane = $null
+foreach ($tzId in 'Australia/Brisbane', 'E. Australia Standard Time') { try { $script:Brisbane = [TimeZoneInfo]::FindSystemTimeZoneById($tzId); break } catch { } }
+
+function ConvertTo-MockSpValue($List, [string]$Name, $Value) {
+    if (-not $List.Fields.Contains($Name)) { throw "Column '$Name' does not exist on list '$($List.Title)'" }
+    if ($null -eq $Value) { return $null }
+    $x = ([xml]$List.Fields[$Name].SchemaXml).DocumentElement
+    switch ($x.GetAttribute('Type')) {
+        'Lookup' { return [pscustomobject]@{ LookupId = [int]$Value } }
+        'URL' { $i = $Value.IndexOf(', '); return [pscustomobject]@{ Url = $Value.Substring(0, $i); Description = $Value.Substring($i + 2) } }
+        'User' { return [pscustomobject]@{ Email = $Value; LookupId = 7 } }
+        'UserMulti' { return @($Value | ForEach-Object { [pscustomobject]@{ Email = $_; LookupId = 7 } }) }
+        'Boolean' { return [bool]$Value }
+        'Number' { return [double]$Value }
+        'DateTime' {
+            $d = [datetime]$Value
+            # CSOM treats an unspecified DateTime as machine-local time and sends UTC.
+            $utc = if ($d.Kind -eq [DateTimeKind]::Utc) { $d } else { $d.ToUniversalTime() }
+            if ($x.GetAttribute('Format') -eq 'DateOnly') {
+                # SharePoint stores a date-only value as midnight in the site time zone (Brisbane).
+                $localDate = [TimeZoneInfo]::ConvertTimeFromUtc($utc, $script:Brisbane).Date
+                return [TimeZoneInfo]::ConvertTimeToUtc([datetime]::SpecifyKind($localDate, 'Unspecified'), $script:Brisbane)
+            }
+            return $utc
+        }
+        default { return [string]$Value }
+    }
+}
+
+function Get-PnPListItem {
+    [CmdletBinding()] param($List, $Id, [int]$PageSize)
+    $l = Resolve-MockList $List
+    if (-not ($l.PSObject.Properties.Name -contains 'Items')) { return @() }
+    if ($PSBoundParameters.ContainsKey('Id')) { return $l.Items | Where-Object Id -eq $Id }
+    return @($l.Items)
+}
+
+function Add-PnPListItem {
+    [CmdletBinding()] param($List, [hashtable]$Values)
+    $l = Resolve-MockList $List
+    if (-not ($l.PSObject.Properties.Name -contains 'Items')) {
+        $l | Add-Member -NotePropertyName Items -NotePropertyValue ([System.Collections.Generic.List[object]]::new())
+        $l | Add-Member -NotePropertyName NextId -NotePropertyValue 1
+    }
+    $fv = @{}
+    foreach ($k in $Values.Keys) { $fv[$k] = ConvertTo-MockSpValue $l $k $Values[$k] }
+    foreach ($f in $l.Fields.Values | Where-Object EnforceUniqueValues) {
+        $n = $f.InternalName
+        if ($null -ne $fv[$n] -and ($l.Items | Where-Object { $_.FieldValues[$n] -eq $fv[$n] })) { throw "Duplicate value '$($fv[$n])' in unique column $n" }
+    }
+    $item = [pscustomobject]@{ Id = $l.NextId; FieldValues = $fv }
+    $l.NextId++
+    $l.Items.Add($item)
+    $l.ItemCount = $l.Items.Count
+    $script:State.Calls.Add("Add-PnPListItem $($l.Url)")
+    return $item
+}
+
+function Set-PnPListItem {
+    [CmdletBinding()] param($List, $Identity, [hashtable]$Values)
+    $l = Resolve-MockList $List
+    $item = $l.Items | Where-Object Id -eq $Identity
+    foreach ($k in $Values.Keys) { $item.FieldValues[$k] = ConvertTo-MockSpValue $l $k $Values[$k] }
+    $script:State.Calls.Add("Set-PnPListItem $($l.Url) $Identity $($Values.Keys -join ',')")
+}
+
+function New-PnPUser {
+    [CmdletBinding()] param([string]$LoginName)
+    if ($LoginName -match 'unknown') { throw "The specified user $LoginName could not be found." }
+    return [pscustomobject]@{ LoginName = $LoginName }
+}
+
+Export-ModuleMember -Function *

@@ -1,0 +1,247 @@
+﻿Title,ItemType,ObligationID,OldStatus,NewStatus,ChangedBy,ChangedAt,Comment,ChangeSource
+CEMP-001,Obligation,CEMP-001,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-002,Obligation,CEMP-002,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-003,Obligation,CEMP-003,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-004,Obligation,CEMP-004,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-005,Obligation,CEMP-005,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-006,Obligation,CEMP-006,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-006B,Obligation,CEMP-006B,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-007,Obligation,CEMP-007,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-008,Obligation,CEMP-008,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-009,Obligation,CEMP-009,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-010,Obligation,CEMP-010,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-011,Obligation,CEMP-011,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-012,Obligation,CEMP-012,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-013,Obligation,CEMP-013,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-014,Obligation,CEMP-014,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-015,Obligation,CEMP-015,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-016,Obligation,CEMP-016,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-017,Obligation,CEMP-017,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-018,Obligation,CEMP-018,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-019,Obligation,CEMP-019,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-020,Obligation,CEMP-020,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-021,Obligation,CEMP-021,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-022,Obligation,CEMP-022,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-023,Obligation,CEMP-023,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-024,Obligation,CEMP-024,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-025,Obligation,CEMP-025,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-026,Obligation,CEMP-026,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-027,Obligation,CEMP-027,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-028,Obligation,CEMP-028,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-029,Obligation,CEMP-029,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-030,Obligation,CEMP-030,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-031,Obligation,CEMP-031,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-032,Obligation,CEMP-032,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-033,Obligation,CEMP-033,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-034,Obligation,CEMP-034,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-035,Obligation,CEMP-035,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-036,Obligation,CEMP-036,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-037,Obligation,CEMP-037,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-038,Obligation,CEMP-038,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-039,Obligation,CEMP-039,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-040,Obligation,CEMP-040,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-041,Obligation,CEMP-041,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-042,Obligation,CEMP-042,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-043,Obligation,CEMP-043,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-044,Obligation,CEMP-044,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-045,Obligation,CEMP-045,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-046,Obligation,CEMP-046,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-047,Obligation,CEMP-047,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-048,Obligation,CEMP-048,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-049,Obligation,CEMP-049,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-050,Obligation,CEMP-050,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-051,Obligation,CEMP-051,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-052,Obligation,CEMP-052,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-053,Obligation,CEMP-053,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-054,Obligation,CEMP-054,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-055,Obligation,CEMP-055,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-056,Obligation,CEMP-056,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-057,Obligation,CEMP-057,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-058,Obligation,CEMP-058,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-059,Obligation,CEMP-059,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CEMP-060,Obligation,CEMP-060,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-001,Obligation,PFAS-001,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-002,Obligation,PFAS-002,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-003,Obligation,PFAS-003,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-004,Obligation,PFAS-004,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-005,Obligation,PFAS-005,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-006,Obligation,PFAS-006,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-007,Obligation,PFAS-007,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-008,Obligation,PFAS-008,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-009,Obligation,PFAS-009,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-010,Obligation,PFAS-010,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-011,Obligation,PFAS-011,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-012,Obligation,PFAS-012,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-013,Obligation,PFAS-013,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-014,Obligation,PFAS-014,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-015,Obligation,PFAS-015,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-016,Obligation,PFAS-016,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-017,Obligation,PFAS-017,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-018,Obligation,PFAS-018,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+PFAS-019,Obligation,PFAS-019,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+ADR-001,Obligation,ADR-001,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+ADR-002,Obligation,ADR-002,,N/A – Info only,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+ADR-003,Obligation,ADR-003,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+ADR-004,Obligation,ADR-004,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+ADR-005,Obligation,ADR-005,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+ADR-006,Obligation,ADR-006,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+ADR-007,Obligation,ADR-007,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-001,Obligation,BC-DA-001,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed),Import
+BC-DA-002,Obligation,BC-DA-002,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed),Import
+BC-DA-003,Obligation,BC-DA-003,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed),Import
+BC-DA-004,Obligation,BC-DA-004,,Complete,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Completed),Import
+BC-DA-005|COMMENCE,Occurrence,BC-DA-005,,Complete,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-005|COMPLETE,Occurrence,BC-DA-005,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-005,Obligation,BC-DA-005,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed),Import
+BC-DA-006,Obligation,BC-DA-006,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed),Import
+BC-DA-007,Obligation,BC-DA-007,,Complete,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Completed),Import
+BC-DA-008,Obligation,BC-DA-008,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed),Import
+BC-DA-009,Obligation,BC-DA-009,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+BC-DA-010,Obligation,BC-DA-010,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+BC-DA-011,Obligation,BC-DA-011,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+BC-DA-012,Obligation,BC-DA-012,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+BC-DA-013,Obligation,BC-DA-013,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+BC-DA-014,Obligation,BC-DA-014,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+BC-DA-015,Obligation,BC-DA-015,,Complete,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Completed),Import
+BC-DA-016,Obligation,BC-DA-016,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-017,Obligation,BC-DA-017,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-018,Obligation,BC-DA-018,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-019,Obligation,BC-DA-019,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-020,Obligation,BC-DA-020,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-021,Obligation,BC-DA-021,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-022,Obligation,BC-DA-022,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-023,Obligation,BC-DA-023,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-024,Obligation,BC-DA-024,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-025,Obligation,BC-DA-025,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-026,Obligation,BC-DA-026,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-027,Obligation,BC-DA-027,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-028,Obligation,BC-DA-028,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-029,Obligation,BC-DA-029,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-030,Obligation,BC-DA-030,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-031,Obligation,BC-DA-031,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-032,Obligation,BC-DA-032,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-033,Obligation,BC-DA-033,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-034|Y1,Occurrence,BC-DA-034,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-034|Y2,Occurrence,BC-DA-034,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-034|Y5,Occurrence,BC-DA-034,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-034,Obligation,BC-DA-034,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-035|Y1,Occurrence,BC-DA-035,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-035|Y2,Occurrence,BC-DA-035,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-035|Y5,Occurrence,BC-DA-035,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-035,Obligation,BC-DA-035,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-036,Obligation,BC-DA-036,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-037|Y1,Occurrence,BC-DA-037,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-037|Y2,Occurrence,BC-DA-037,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-037|Y5,Occurrence,BC-DA-037,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-037,Obligation,BC-DA-037,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-038,Obligation,BC-DA-038,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-039|Y1,Occurrence,BC-DA-039,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-039|Y2,Occurrence,BC-DA-039,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-039|Y5,Occurrence,BC-DA-039,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-039,Obligation,BC-DA-039,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-040,Obligation,BC-DA-040,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-041,Obligation,BC-DA-041,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+BC-DA-042|Y1,Occurrence,BC-DA-042,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-042|Y2,Occurrence,BC-DA-042,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-042|Y5,Occurrence,BC-DA-042,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+BC-DA-042,Obligation,BC-DA-042,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+NN-DA-001,Obligation,NN-DA-001,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+NN-DA-002,Obligation,NN-DA-002,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+NN-DA-003,Obligation,NN-DA-003,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+NN-DA-004,Obligation,NN-DA-004,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+NN-DA-005,Obligation,NN-DA-005,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+NN-DA-006,Obligation,NN-DA-006,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+NN-DA-007,Obligation,NN-DA-007,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+NN-DA-008,Obligation,NN-DA-008,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+NN-DA-009,Obligation,NN-DA-009,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+NN-DA-010,Obligation,NN-DA-010,,Complete,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Completed),Import
+NN-DA-011,Obligation,NN-DA-011,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - rehabilitation),Import
+MP-TNAR-001,Obligation,MP-TNAR-001,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+MP-TNAR-002|COMMENCE,Occurrence,MP-TNAR-002,,Complete,,2026-09-29T09:00:00+10:00,Created at import,Import
+MP-TNAR-002|COMPLETE,Occurrence,MP-TNAR-002,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+MP-TNAR-002,Obligation,MP-TNAR-002,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+MP-TNAR-003,Obligation,MP-TNAR-003,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+MP-TNAR-004,Obligation,MP-TNAR-004,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+MP-TNAR-005,Obligation,MP-TNAR-005,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - rehabilitation),Import
+MP-TNAR-005B,Obligation,MP-TNAR-005B,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - rehabilitation),Import
+MP-TNAR-006,Obligation,MP-TNAR-006,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+MP-TNAR-006B,Obligation,MP-TNAR-006B,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+MP-NAC-001,Obligation,MP-NAC-001,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+MP-NAC-002,Obligation,MP-NAC-002,,N/A – Info only,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: noted),Import
+MP-NAC-002A,Obligation,MP-NAC-002A,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - rehabilitation),Import
+MP-NAC-002B,Obligation,MP-NAC-002B,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - rehabilitation),Import
+MP-NAC-002C,Obligation,MP-NAC-002C,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - rehabilitation),Import
+MP-NAC-003|COMMENCE,Occurrence,MP-NAC-003,,Complete,,2026-09-29T09:00:00+10:00,Created at import,Import
+MP-NAC-003|COMPLETE,Occurrence,MP-NAC-003,,Not started,,2026-09-29T09:00:00+10:00,Created at import,Import
+MP-NAC-003,Obligation,MP-NAC-003,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+MP-NAC-004,Obligation,MP-NAC-004,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Ongoing),Import
+MP-NAC-005,Obligation,MP-NAC-005,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+MP-NAC-006,Obligation,MP-NAC-006,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+MP-NAC-006B,Obligation,MP-NAC-006B,,Underway,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - ongoing),Import
+MP-NAC-007,Obligation,MP-NAC-007,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - rehabilitation),Import
+MP-NAC-007B,Obligation,MP-NAC-007B,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: Not completed - rehabilitation),Import
+CHMP-001,Obligation,CHMP-001,,N/A – Info only,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-002,Obligation,CHMP-002,,N/A – Info only,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-003,Obligation,CHMP-003,,N/A – Info only,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-004,Obligation,CHMP-004,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-005,Obligation,CHMP-005,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-006,Obligation,CHMP-006,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-007,Obligation,CHMP-007,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-008,Obligation,CHMP-008,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-009,Obligation,CHMP-009,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-010,Obligation,CHMP-010,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-011,Obligation,CHMP-011,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-012,Obligation,CHMP-012,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-013,Obligation,CHMP-013,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+CHMP-014,Obligation,CHMP-014,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+RPP-001,Obligation,RPP-001,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+RPP-002,Obligation,RPP-002,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+RPP-003,Obligation,RPP-003,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-001,Obligation,SPEC-001,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-002,Obligation,SPEC-002,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-003,Obligation,SPEC-003,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-004,Obligation,SPEC-004,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-005,Obligation,SPEC-005,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-006,Obligation,SPEC-006,,N/A – Info only,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-007,Obligation,SPEC-007,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-008,Obligation,SPEC-008,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-009,Obligation,SPEC-009,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-010,Obligation,SPEC-010,,N/A – Info only,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-011,Obligation,SPEC-011,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-012,Obligation,SPEC-012,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-013,Obligation,SPEC-013,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-014,Obligation,SPEC-014,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-015,Obligation,SPEC-015,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-016,Obligation,SPEC-016,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-017,Obligation,SPEC-017,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-018,Obligation,SPEC-018,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-019,Obligation,SPEC-019,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-020,Obligation,SPEC-020,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-021,Obligation,SPEC-021,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-022,Obligation,SPEC-022,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-023,Obligation,SPEC-023,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-024,Obligation,SPEC-024,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-025,Obligation,SPEC-025,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-026,Obligation,SPEC-026,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-027,Obligation,SPEC-027,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-028,Obligation,SPEC-028,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-029,Obligation,SPEC-029,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-030,Obligation,SPEC-030,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-031,Obligation,SPEC-031,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+SPEC-032,Obligation,SPEC-032,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-001,Obligation,LEG-001,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-002,Obligation,LEG-002,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-003,Obligation,LEG-003,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-004,Obligation,LEG-004,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-005,Obligation,LEG-005,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-006,Obligation,LEG-006,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-007,Obligation,LEG-007,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-008,Obligation,LEG-008,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-009,Obligation,LEG-009,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-010,Obligation,LEG-010,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-011,Obligation,LEG-011,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-012,Obligation,LEG-012,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-013,Obligation,LEG-013,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-014,Obligation,LEG-014,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-015,Obligation,LEG-015,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import
+LEG-016,Obligation,LEG-016,,Not started,,2026-09-29T09:00:00+10:00,Initial status from TP002.1 Rev 2 (TP002 value: blank),Import

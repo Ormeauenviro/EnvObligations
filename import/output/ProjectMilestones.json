@@ -1,0 +1,53 @@
+{
+ "list": "Project Milestones",
+ "url": "Lists/ProjectMilestones",
+ "key": "ProjectMilestones",
+ "keyFields": [
+  "Title"
+ ],
+ "liveFields": [
+  "PlannedDate",
+  "ActualDate",
+  "Notes"
+ ],
+ "createOnly": false,
+ "count": 6,
+ "items": [
+  {
+   "Title": "Construction start",
+   "PlannedDate": null,
+   "ActualDate": null,
+   "Notes": "Date required (D-10). Format DD/MM/YYYY."
+  },
+  {
+   "Title": "Practical completion",
+   "PlannedDate": null,
+   "ActualDate": null,
+   "Notes": "Date required (D-10). Anchors post-construction and Year 1/2/5 items."
+  },
+  {
+   "Title": "Rehabilitation completion",
+   "PlannedDate": null,
+   "ActualDate": null,
+   "Notes": "Date required (D-10). Anchors aquatic plant monitoring."
+  },
+  {
+   "Title": "Revegetation commencement",
+   "PlannedDate": null,
+   "ActualDate": null,
+   "Notes": "Date required (D-10). Starts quarterly revegetation monitoring."
+  },
+  {
+   "Title": "Temporary barrier removal",
+   "PlannedDate": null,
+   "ActualDate": null,
+   "Notes": "Date required (D-10). No Name Western Haul Road Crossing."
+  },
+  {
+   "Title": "Restoration works completion",
+   "PlannedDate": null,
+   "ActualDate": null,
+   "Notes": "Date required (D-10). Marine plant restoration."
+  }
+ ]
+}

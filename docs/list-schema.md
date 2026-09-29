@@ -17,7 +17,7 @@ This schema implements all Phase 1 decisions (D-01 to D-16, accepted 29/09/2026)
 | **Follow-ups** | `Lists/FollowUps` | Missing, overdue, evidence-gap and import-review follow-ups | Hundreds | `ObligationID` (+ `OccurrenceKey`) text |
 | **Status History** | `Lists/StatusHistory` | Append-only log of every status change | Thousands, **past 2,000** | `ObligationID` text + `Title` = item key |
 | **Source Documents** | `Lists/SourceDocuments` | _Doc Ref, plus permits and plans cited in the register (D-14) | ≈ 40 | Obligations → `SourceDocument` lookup |
-| **Report Components** | `Lists/ReportComponents` | Reporting Matrix, one item per ✕ | 28 | `ProducingObligationID` text |
+| **Report Components** | `Lists/ReportComponents` | Reporting Matrix, one item per ✕ | 26 | `ProducingObligationID` text |
 | **Role Assignments** | `Lists/RoleAssignments` | Responsible Role → people (D-11) | 10 | Obligations `ResponsibleRole` = `Title` |
 | **Project Milestones** | `Lists/ProjectMilestones` | Key dates that anchor due-date rules (D-10) | 6 | Obligations `DueAnchor` = `Title` |
 
@@ -66,7 +66,7 @@ Daily obligations roll up into one weekly occurrence: `YYYY-Www`, labelled *Dail
 | **Overdue** is derived | Nothing stores Overdue as a status. Flow 2 sets `IsOverdue` each morning on items where Due Date / Period Due < today, the item isn't Complete or N/A, and `Active` = Yes. The app also works it out live, so an item is overdue on screen straight away. |
 | **Complete** needs evidence or a justification | The app blocks Complete unless an Evidence item exists for the Obligation ID or Occurrence Key (or `EvidenceURL` is set on the occurrence), or `StatusComment` holds a justification. |
 | **Compliance Outcome** is separate | `ComplianceOutcome` (Not assessed / Compliant / Non-compliant) is independent of `Status`. |
-| Recurring obligations roll up | When an occurrence changes, the app (and flows 2 and 3) copy the *current* occurrence's status and Period Due into the obligation's `Status` and `DueDate`, and its key into `CurrentOccurrenceKey`. The current occurrence is the earliest one that isn't Complete, or the latest one if all are Complete. |
+| Recurring obligations roll up | When an occurrence changes, the app (and flows 2 and 3) copy the *current* occurrence's status and Period Due into the obligation's `Status` and `DueDate`, and its key into `CurrentOccurrenceKey`. The current occurrence is the earliest one that isn't Complete, or the latest one if all are Complete. The obligation is Complete when every occurrence is Complete, Missing if any occurrence is Missing, and Underway when the current occurrence is Not started but an earlier one is Complete (for example, commencement notice sent, completion notice pending). |
 | Every change is logged | Every status change (app, flow or import) writes one **Status History** item: item key, type, old and new status, who, when (`ChangedAt`, date and time) and the comment. |
 | Once-off due dates from project milestones (D-10) | When `DueAnchor` is set, Due Date = the milestone's Actual Date (or Planned Date if there is no actual) + `DueOffsetDays`. The loader calculates it, and a Phase 5 flow recalculates when a milestone date changes. |
 
@@ -256,9 +256,9 @@ Versioning on · attachments off · 9 indexed columns (limit 20) · 2 lookup/per
 | Obligation ID | `ObligationID` | Single line of text | Yes | Yes |  | Copy of the obligation's ID for delegable filtering. |
 | Obligation Summary | `ObligationSummary` | Single line of text |  |  |  | Copy of Requirement Summary so galleries avoid per-row lookups. |
 | Period Label | `PeriodLabel` | Single line of text | Yes |  |  |  |
-| Period Start | `PeriodStart` | Date (date only) | Yes | Yes |  |  |
+| Period Start | `PeriodStart` | Date (date only) |  | Yes |  | Blank until the anchoring project milestone date is known. |
 | Period End | `PeriodEnd` | Date (date only) |  |  |  |  |
-| Period Due | `PeriodDue` | Date (date only) | Yes | Yes |  |  |
+| Period Due | `PeriodDue` | Date (date only) |  | Yes |  | Blank = date to be confirmed (milestone not yet dated). |
 | Assignee | `Assignee` | Person (single) |  | Yes |  |  |
 | Status | `Status` | Choice (drop-down) | Yes | Yes | Not started | [OccurrenceStatus](#choice-occurrencestatus) |
 | Status Reason/Justification | `StatusComment` | Multiple lines of text (plain) |  |  |  |  |

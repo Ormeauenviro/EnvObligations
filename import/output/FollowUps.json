@@ -1,0 +1,96 @@
+{
+ "list": "Follow-ups",
+ "url": "Lists/FollowUps",
+ "key": "FollowUps",
+ "keyFields": [
+  "ObligationID",
+  "Title"
+ ],
+ "liveFields": [
+  "Owner",
+  "FollowUpDate",
+  "Status",
+  "ResolutionComment",
+  "ResolvedBy",
+  "ResolvedDate"
+ ],
+ "createOnly": false,
+ "count": 5,
+ "items": [
+  {
+   "Title": "Stage and timing conflict",
+   "ObligationID": "CEMP-023",
+   "OccurrenceKey": null,
+   "ObligationSummary": "Prior to the development of the site, a comprehensive site assessment will be conducted by a suitably qualified person to identify potential fire ant habitats and nests on site. Any identified nests or signs of fire ant activity will be immediately…",
+   "ReasonType": "Import review",
+   "Reason": "TP002 stage is Pre construction but timing is Post construction. Confirm when this applies.",
+   "Owner": "DanielBlunt@dtinfrastructure.com.au",
+   "FollowUpDate": "2026-10-13",
+   "Status": "Open",
+   "ResolutionComment": null,
+   "ResolvedBy": null,
+   "ResolvedDate": null,
+   "RiskSort": 5
+  },
+  {
+   "Title": "Confirm review frequency",
+   "ObligationID": "CEMP-036",
+   "OccurrenceKey": null,
+   "ObligationSummary": "Review of environmental objectives and targets",
+   "ReasonType": "Import review",
+   "Reason": "TP002 timing was 'Quarterly / Six monthly?'. Imported as Quarterly; confirm and update Frequency.",
+   "Owner": "DanielBlunt@dtinfrastructure.com.au",
+   "FollowUpDate": "2026-10-13",
+   "Status": "Open",
+   "ResolutionComment": null,
+   "ResolvedBy": null,
+   "ResolvedDate": null,
+   "RiskSort": 5
+  },
+  {
+   "Title": "TP002 editorial note to resolve",
+   "ObligationID": "ADR-001",
+   "OccurrenceKey": null,
+   "ObligationSummary": "Notification must be submitted prior to, but no more than twenty (20) business days before work commences. Pre-work notification can be submitted through the online notification system at http://adr.fisheries.qld.gov.au. If you are having trouble ac…",
+   "ReasonType": "Import review",
+   "Reason": "TP002 location column contained an editorial note: 'To change all of these to Creek crossings that required ADR WWBW'. Confirm the creek crossings that required ADR WWBW and update the location.",
+   "Owner": "DanielBlunt@dtinfrastructure.com.au",
+   "FollowUpDate": "2026-10-13",
+   "Status": "Open",
+   "ResolutionComment": null,
+   "ResolvedBy": null,
+   "ResolvedDate": null,
+   "RiskSort": 5
+  },
+  {
+   "Title": "Requirement text missing or incomplete in TP002",
+   "ObligationID": "RPP-001",
+   "OccurrenceKey": null,
+   "ObligationSummary": "⚠ Requirement text missing in TP002 – see source reference",
+   "ReasonType": "Import review",
+   "Reason": "The TP002 row has no usable requirement text. Confirm the obligation from the source document and update the Requirement.",
+   "Owner": "DanielBlunt@dtinfrastructure.com.au",
+   "FollowUpDate": "2026-10-13",
+   "Status": "Open",
+   "ResolutionComment": null,
+   "ResolvedBy": null,
+   "ResolvedDate": null,
+   "RiskSort": 4
+  },
+  {
+   "Title": "Requirement text missing or incomplete in TP002",
+   "ObligationID": "LEG-016",
+   "OccurrenceKey": null,
+   "ObligationSummary": "EPBC Act - significant impact identified during works",
+   "ReasonType": "Import review",
+   "Reason": "The TP002 row has no usable requirement text. Confirm the obligation from the source document and update the Requirement.",
+   "Owner": "DanielBlunt@dtinfrastructure.com.au",
+   "FollowUpDate": "2026-10-13",
+   "Status": "Open",
+   "ResolutionComment": null,
+   "ResolvedBy": null,
+   "ResolvedDate": null,
+   "RiskSort": 5
+  }
+ ]
+}

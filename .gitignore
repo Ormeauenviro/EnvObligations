@@ -3,3 +3,5 @@ __pycache__/
 .venv/
 ~$*.xlsx
 out/
+import/output/load-log.csv
+import/output/load-plan.csv

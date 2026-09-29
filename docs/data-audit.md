@@ -143,7 +143,7 @@ Proposed fix: status = K, notes = L, Evidence Required = blank, and the stray J 
 - **Instructions** gives the Risk list A, B, C, D and cites **DTI-RM-ST001**. The Risk Rating header comment on each sheet cites **DA-ZH-PR028 / Annex B** instead, and the RPP comment cites DG-ZH-FM028.1. The choice values are A–D either way. Only the help text differs; I'll use DTI-RM-ST001 as you specified.
 - **_Template** defines the standard 12-column layout. It is used for the export layout (Phase 5).
 - **Summary** holds project details (Project QTMP – Ormeau Maintenance Facility, Location Ormeau, Client Downer (RTS), PM Sean Nicolls, Updated 27/09/2023 "REV 2 REVIEW") and six COUNTIFs on `'Specification Requirements'!J:J` only. The project details become app settings/header text, and the counts are replaced by the Dashboard.
-- **Reporting Matrix** has 20 content items (A5:A24) × 5 reports (B4:F4, each "MONTHLY ⏎ <name>" or "POST CONSTRUCTION ⏎ <name>") with "X" marks: 28 X marks in total. Threaded comments on B4–F4 give each report's source clause. Proposed **Report Components** load: one row per (item, report) X, with Report Name, Report Frequency, Report Source Ref and a link to the obligation that produces the report:
+- **Reporting Matrix** has 20 content items (A5:A24) × 5 reports (B4:F4, each "MONTHLY ⏎ <name>" or "POST CONSTRUCTION ⏎ <name>") with "X" marks: 26 X marks in total (corrected from 28 in Phase 3). Threaded comments on B4–F4 give each report's source clause. Proposed **Report Components** load: one row per (item, report) X, with Report Name, Report Frequency, Report Source Ref and a link to the obligation that produces the report:
 
   | Col | Report | Frequency | Source (comment) | Producing obligation (proposed) |
   |---|---|---|---|---|
@@ -244,7 +244,7 @@ The target Status values are *Not started*, *Underway*, *Complete*, *Missing* an
 | noted | MP row 35 | N/A – Info only | Not assessed | |
 | Drop-down values never used: *Compliant, Not Compliant, Completed, In Progress, Overdue, Not Started* | Summary A20:A25 | Not Compliant → Outcome *Non-compliant*; In Progress → *Underway*; Completed → *Complete*; Not Started → *Not started*; Compliant → Outcome *Compliant*; Overdue → *derived* | | Kept for the export mapping back to TP002 |
 
-**BC condition 5 / MP TNAR 2 / MP NAC 3 / NN 2 (commencement and completion notifications):** each row combines two notices, one before works and one after completion. The commencement notice is evidenced (hyperlinks to *DAF Notifications* or *Pre-works notification*), but the completion notice is still outstanding ("Required at end of conditions"). I propose splitting each into two **Occurrences** (Commencement notice → Complete, Completion notice → Not started), with the obligation rolling up to Underway (**⚠ D-05**).
+**BC condition 5 / MP TNAR 2 / MP NAC 3 (commencement and completion notifications):** each row combines two notices, one before works and one after completion. The commencement notice is evidenced (hyperlinks to *DAF Notifications* or *Pre-works notification*), but the completion notice is still outstanding ("Required at end of conditions"). I propose splitting each into two **Occurrences** (Commencement notice → Complete, Completion notice → Not started), with the obligation rolling up to Underway (**⚠ D-05**). *Phase 3 note: No Name condition 2 was listed here originally, but it covers the completion notice only, so it isn't split.*
 
 ### 4.2 Project Stage
 
